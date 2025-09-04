@@ -40,7 +40,7 @@ typedef struct {
 void cpu_init();
 bool cpu_step();
 
-u16 read_reg(reg_type r);
+u16 cpu_read_reg(reg_type r);
 u16 reverse(u16 val);
 
 typedef void (*IN_PROC)(cpu_context *);
@@ -50,3 +50,6 @@ IN_PROC inst_get_processor(in_type type);
 #define CPU_FLAG_C BIT(ctx->regs.f, 4)
 
 char *inst_name(in_type t);
+
+void cpu_set_reg(reg_type rt, u16 val);
+void fetch_data();

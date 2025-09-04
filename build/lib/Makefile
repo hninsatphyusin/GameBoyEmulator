@@ -258,6 +258,30 @@ cpu.c.s:
 	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/cpu.c.s
 .PHONY : cpu.c.s
 
+cpu_fetch.o: cpu_fetch.c.o
+.PHONY : cpu_fetch.o
+
+# target to build an object file
+cpu_fetch.c.o:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/cpu_fetch.c.o
+.PHONY : cpu_fetch.c.o
+
+cpu_fetch.i: cpu_fetch.c.i
+.PHONY : cpu_fetch.i
+
+# target to preprocess a source file
+cpu_fetch.c.i:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/cpu_fetch.c.i
+.PHONY : cpu_fetch.c.i
+
+cpu_fetch.s: cpu_fetch.c.s
+.PHONY : cpu_fetch.s
+
+# target to generate assembly for a file
+cpu_fetch.c.s:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/cpu_fetch.c.s
+.PHONY : cpu_fetch.c.s
+
 cpu_proc.o: cpu_proc.c.o
 .PHONY : cpu_proc.o
 
@@ -425,6 +449,9 @@ help:
 	@echo "... cpu.o"
 	@echo "... cpu.i"
 	@echo "... cpu.s"
+	@echo "... cpu_fetch.o"
+	@echo "... cpu_fetch.i"
+	@echo "... cpu_fetch.s"
 	@echo "... cpu_proc.o"
 	@echo "... cpu_proc.i"
 	@echo "... cpu_proc.s"

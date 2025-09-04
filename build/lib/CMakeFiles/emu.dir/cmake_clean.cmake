@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/emu.dir/cart.c.o.d"
   "CMakeFiles/emu.dir/cpu.c.o"
   "CMakeFiles/emu.dir/cpu.c.o.d"
+  "CMakeFiles/emu.dir/cpu_fetch.c.o"
+  "CMakeFiles/emu.dir/cpu_fetch.c.o.d"
   "CMakeFiles/emu.dir/cpu_proc.c.o"
   "CMakeFiles/emu.dir/cpu_proc.c.o.d"
   "CMakeFiles/emu.dir/cpu_util.c.o"

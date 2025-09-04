@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/bus.c" "lib/CMakeFiles/emu.dir/bus.c.o" "gcc" "lib/CMakeFiles/emu.dir/bus.c.o.d"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/cart.c" "lib/CMakeFiles/emu.dir/cart.c.o" "gcc" "lib/CMakeFiles/emu.dir/cart.c.o.d"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/cpu.c" "lib/CMakeFiles/emu.dir/cpu.c.o" "gcc" "lib/CMakeFiles/emu.dir/cpu.c.o.d"
+  "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/cpu_fetch.c" "lib/CMakeFiles/emu.dir/cpu_fetch.c.o" "gcc" "lib/CMakeFiles/emu.dir/cpu_fetch.c.o.d"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/cpu_proc.c" "lib/CMakeFiles/emu.dir/cpu_proc.c.o" "gcc" "lib/CMakeFiles/emu.dir/cpu_proc.c.o.d"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/cpu_util.c" "lib/CMakeFiles/emu.dir/cpu_util.c.o" "gcc" "lib/CMakeFiles/emu.dir/cpu_util.c.o.d"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/emu.c" "lib/CMakeFiles/emu.dir/emu.c.o" "gcc" "lib/CMakeFiles/emu.dir/emu.c.o.d"

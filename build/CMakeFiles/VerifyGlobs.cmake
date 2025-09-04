@@ -25,6 +25,7 @@ set(OLD_GLOB
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/bus.c"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/cart.c"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/cpu.c"
+  "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/cpu_fetch.c"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/cpu_proc.c"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/cpu_util.c"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/emu.c"
