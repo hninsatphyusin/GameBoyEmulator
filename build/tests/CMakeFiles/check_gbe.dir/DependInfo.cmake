@@ -8,8 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/hnin/Documents/Projects/GameBoyEmulator/tests/check_gbe.c" "tests/CMakeFiles/check_gbe.dir/check_gbe.c.o" "gcc" "tests/CMakeFiles/check_gbe.dir/check_gbe.c.o.d"
-  "" "tests/check_gbe" "gcc" "tests/CMakeFiles/check_gbe.dir/link.d"
+  "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/tests/check_gbe.c" "tests/CMakeFiles/check_gbe.dir/check_gbe.c.o" "gcc" "tests/CMakeFiles/check_gbe.dir/check_gbe.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

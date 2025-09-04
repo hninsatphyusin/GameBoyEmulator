@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /opt/homebrew/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E rm -f
+RM = /opt/homebrew/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hnin/Documents/Projects/GameBoyEmulator
+CMAKE_SOURCE_DIR = "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hnin/Documents/Projects/GameBoyEmulator/build
+CMAKE_BINARY_DIR = "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build"
 
 # Include any dependencies generated for this target.
 include gbemu/CMakeFiles/gbemu.dir/depend.make
@@ -73,18 +73,18 @@ gbemu/CMakeFiles/gbemu.dir/codegen:
 .PHONY : gbemu/CMakeFiles/gbemu.dir/codegen
 
 gbemu/CMakeFiles/gbemu.dir/main.c.o: gbemu/CMakeFiles/gbemu.dir/flags.make
-gbemu/CMakeFiles/gbemu.dir/main.c.o: /home/hnin/Documents/Projects/GameBoyEmulator/gbemu/main.c
+gbemu/CMakeFiles/gbemu.dir/main.c.o: /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/gbemu/main.c
 gbemu/CMakeFiles/gbemu.dir/main.c.o: gbemu/CMakeFiles/gbemu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hnin/Documents/Projects/GameBoyEmulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object gbemu/CMakeFiles/gbemu.dir/main.c.o"
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build/gbemu && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT gbemu/CMakeFiles/gbemu.dir/main.c.o -MF CMakeFiles/gbemu.dir/main.c.o.d -o CMakeFiles/gbemu.dir/main.c.o -c /home/hnin/Documents/Projects/GameBoyEmulator/gbemu/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object gbemu/CMakeFiles/gbemu.dir/main.c.o"
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/gbemu" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT gbemu/CMakeFiles/gbemu.dir/main.c.o -MF CMakeFiles/gbemu.dir/main.c.o.d -o CMakeFiles/gbemu.dir/main.c.o -c "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/gbemu/main.c"
 
 gbemu/CMakeFiles/gbemu.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gbemu.dir/main.c.i"
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build/gbemu && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hnin/Documents/Projects/GameBoyEmulator/gbemu/main.c > CMakeFiles/gbemu.dir/main.c.i
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/gbemu" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/gbemu/main.c" > CMakeFiles/gbemu.dir/main.c.i
 
 gbemu/CMakeFiles/gbemu.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gbemu.dir/main.c.s"
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build/gbemu && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hnin/Documents/Projects/GameBoyEmulator/gbemu/main.c -o CMakeFiles/gbemu.dir/main.c.s
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/gbemu" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/gbemu/main.c" -o CMakeFiles/gbemu.dir/main.c.s
 
 # Object files for target gbemu
 gbemu_OBJECTS = \
@@ -95,28 +95,27 @@ gbemu_EXTERNAL_OBJECTS =
 
 gbemu/gbemu: gbemu/CMakeFiles/gbemu.dir/main.c.o
 gbemu/gbemu: gbemu/CMakeFiles/gbemu.dir/build.make
-gbemu/gbemu: gbemu/CMakeFiles/gbemu.dir/compiler_depend.ts
 gbemu/gbemu: lib/libemu.a
-gbemu/gbemu: /usr/lib/aarch64-linux-gnu/libSDL2.so
-gbemu/gbemu: /usr/lib/aarch64-linux-gnu/libSDL2_ttf.so
-gbemu/gbemu: /usr/lib/aarch64-linux-gnu/libSDL2main.a
-gbemu/gbemu: /usr/lib/aarch64-linux-gnu/libSDL2.so
-gbemu/gbemu: /usr/lib/aarch64-linux-gnu/libSDL2_ttf.so
-gbemu/gbemu: /usr/lib/aarch64-linux-gnu/libSDL2main.a
+gbemu/gbemu: /opt/homebrew/lib/libSDL2.dylib
+gbemu/gbemu: /opt/homebrew/lib/libSDL2_ttf.dylib
+gbemu/gbemu: /opt/homebrew/lib/libSDL2main.a
+gbemu/gbemu: /opt/homebrew/lib/libSDL2.dylib
+gbemu/gbemu: /opt/homebrew/lib/libSDL2_ttf.dylib
+gbemu/gbemu: /opt/homebrew/lib/libSDL2main.a
 gbemu/gbemu: gbemu/CMakeFiles/gbemu.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/hnin/Documents/Projects/GameBoyEmulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable gbemu"
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build/gbemu && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gbemu.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build/gbemu && /usr/bin/cmake -E copy /home/hnin/Documents/Projects/GameBoyEmulator/NotoSansMono-Medium.ttf /home/hnin/Documents/Projects/GameBoyEmulator/build/gbemu
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable gbemu"
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/gbemu" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gbemu.dir/link.txt --verbose=$(VERBOSE)
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/gbemu" && /opt/homebrew/bin/cmake -E copy "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/NotoSansMono-Medium.ttf" "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/gbemu"
 
 # Rule to build all files generated by this target.
 gbemu/CMakeFiles/gbemu.dir/build: gbemu/gbemu
 .PHONY : gbemu/CMakeFiles/gbemu.dir/build
 
 gbemu/CMakeFiles/gbemu.dir/clean:
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build/gbemu && $(CMAKE_COMMAND) -P CMakeFiles/gbemu.dir/cmake_clean.cmake
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/gbemu" && $(CMAKE_COMMAND) -P CMakeFiles/gbemu.dir/cmake_clean.cmake
 .PHONY : gbemu/CMakeFiles/gbemu.dir/clean
 
 gbemu/CMakeFiles/gbemu.dir/depend:
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hnin/Documents/Projects/GameBoyEmulator /home/hnin/Documents/Projects/GameBoyEmulator/gbemu /home/hnin/Documents/Projects/GameBoyEmulator/build /home/hnin/Documents/Projects/GameBoyEmulator/build/gbemu /home/hnin/Documents/Projects/GameBoyEmulator/build/gbemu/CMakeFiles/gbemu.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator" "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/gbemu" "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/gbemu" "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/gbemu/CMakeFiles/gbemu.dir/DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : gbemu/CMakeFiles/gbemu.dir/depend
 

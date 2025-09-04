@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/check_gbe.dir/link.d"
   "CMakeFiles/check_gbe.dir/check_gbe.c.o"
   "CMakeFiles/check_gbe.dir/check_gbe.c.o.d"
   "check_gbe"

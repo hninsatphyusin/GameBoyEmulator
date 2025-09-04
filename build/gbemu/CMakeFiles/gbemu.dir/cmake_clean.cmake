@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/gbemu.dir/link.d"
   "CMakeFiles/gbemu.dir/main.c.o"
   "CMakeFiles/gbemu.dir/main.c.o.d"
   "gbemu"

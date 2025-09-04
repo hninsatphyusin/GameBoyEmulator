@@ -196,4 +196,12 @@ bool load_cart(char *cart_filename) {
     return false;
 } 
 
+u8 cart_read(u16 address) {
+    //for rom 
+    return ctx.rom_data[address];
+}
+void cart_write(u16 address, u8 value) {
+    ctx.rom_data[address] = value;
+}
+
 

@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /opt/homebrew/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E rm -f
+RM = /opt/homebrew/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hnin/Documents/Projects/GameBoyEmulator
+CMAKE_SOURCE_DIR = "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hnin/Documents/Projects/GameBoyEmulator/build
+CMAKE_BINARY_DIR = "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/hnin/Documents/Projects/GameBoyEmulator/build
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+	/opt/homebrew/bin/ctest --force-new-ctest-process $(ARGS)
 .PHONY : test
 
 # Special rule for the target test
@@ -77,8 +77,8 @@ test/fast: test
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
+	/opt/homebrew/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -88,7 +88,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/homebrew/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -107,49 +107,49 @@ list_install_components/fast: list_install_components
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
+	/opt/homebrew/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
+	/opt/homebrew/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/hnin/Documents/Projects/GameBoyEmulator/build/CMakeFiles /home/hnin/Documents/Projects/GameBoyEmulator/build/lib//CMakeFiles/progress.marks
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hnin/Documents/Projects/GameBoyEmulator/build/CMakeFiles 0
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/lib//CMakeFiles/progress.marks"
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/clean
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,23 +158,23 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/preinstall
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/preinstall
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build && $(CMAKE_COMMAND) -P /home/hnin/Documents/Projects/GameBoyEmulator/build/CMakeFiles/VerifyGlobs.cmake
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(CMAKE_COMMAND) -P "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/VerifyGlobs.cmake"
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/CMakeFiles/emu.dir/rule:
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/emu.dir/rule
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/emu.dir/rule
 .PHONY : lib/CMakeFiles/emu.dir/rule
 
 # Convenience name for target.
@@ -183,7 +183,7 @@ emu: lib/CMakeFiles/emu.dir/rule
 
 # fast build rule for target.
 emu/fast:
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/build
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/build
 .PHONY : emu/fast
 
 bus.o: bus.c.o
@@ -191,7 +191,7 @@ bus.o: bus.c.o
 
 # target to build an object file
 bus.c.o:
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/bus.c.o
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/bus.c.o
 .PHONY : bus.c.o
 
 bus.i: bus.c.i
@@ -199,7 +199,7 @@ bus.i: bus.c.i
 
 # target to preprocess a source file
 bus.c.i:
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/bus.c.i
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/bus.c.i
 .PHONY : bus.c.i
 
 bus.s: bus.c.s
@@ -207,7 +207,7 @@ bus.s: bus.c.s
 
 # target to generate assembly for a file
 bus.c.s:
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/bus.c.s
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/bus.c.s
 .PHONY : bus.c.s
 
 cart.o: cart.c.o
@@ -215,7 +215,7 @@ cart.o: cart.c.o
 
 # target to build an object file
 cart.c.o:
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/cart.c.o
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/cart.c.o
 .PHONY : cart.c.o
 
 cart.i: cart.c.i
@@ -223,7 +223,7 @@ cart.i: cart.c.i
 
 # target to preprocess a source file
 cart.c.i:
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/cart.c.i
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/cart.c.i
 .PHONY : cart.c.i
 
 cart.s: cart.c.s
@@ -231,7 +231,7 @@ cart.s: cart.c.s
 
 # target to generate assembly for a file
 cart.c.s:
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/cart.c.s
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/cart.c.s
 .PHONY : cart.c.s
 
 cpu.o: cpu.c.o
@@ -239,7 +239,7 @@ cpu.o: cpu.c.o
 
 # target to build an object file
 cpu.c.o:
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/cpu.c.o
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/cpu.c.o
 .PHONY : cpu.c.o
 
 cpu.i: cpu.c.i
@@ -247,7 +247,7 @@ cpu.i: cpu.c.i
 
 # target to preprocess a source file
 cpu.c.i:
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/cpu.c.i
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/cpu.c.i
 .PHONY : cpu.c.i
 
 cpu.s: cpu.c.s
@@ -255,15 +255,63 @@ cpu.s: cpu.c.s
 
 # target to generate assembly for a file
 cpu.c.s:
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/cpu.c.s
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/cpu.c.s
 .PHONY : cpu.c.s
+
+cpu_proc.o: cpu_proc.c.o
+.PHONY : cpu_proc.o
+
+# target to build an object file
+cpu_proc.c.o:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/cpu_proc.c.o
+.PHONY : cpu_proc.c.o
+
+cpu_proc.i: cpu_proc.c.i
+.PHONY : cpu_proc.i
+
+# target to preprocess a source file
+cpu_proc.c.i:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/cpu_proc.c.i
+.PHONY : cpu_proc.c.i
+
+cpu_proc.s: cpu_proc.c.s
+.PHONY : cpu_proc.s
+
+# target to generate assembly for a file
+cpu_proc.c.s:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/cpu_proc.c.s
+.PHONY : cpu_proc.c.s
+
+cpu_util.o: cpu_util.c.o
+.PHONY : cpu_util.o
+
+# target to build an object file
+cpu_util.c.o:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/cpu_util.c.o
+.PHONY : cpu_util.c.o
+
+cpu_util.i: cpu_util.c.i
+.PHONY : cpu_util.i
+
+# target to preprocess a source file
+cpu_util.c.i:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/cpu_util.c.i
+.PHONY : cpu_util.c.i
+
+cpu_util.s: cpu_util.c.s
+.PHONY : cpu_util.s
+
+# target to generate assembly for a file
+cpu_util.c.s:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/cpu_util.c.s
+.PHONY : cpu_util.c.s
 
 emu.o: emu.c.o
 .PHONY : emu.o
 
 # target to build an object file
 emu.c.o:
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/emu.c.o
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/emu.c.o
 .PHONY : emu.c.o
 
 emu.i: emu.c.i
@@ -271,7 +319,7 @@ emu.i: emu.c.i
 
 # target to preprocess a source file
 emu.c.i:
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/emu.c.i
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/emu.c.i
 .PHONY : emu.c.i
 
 emu.s: emu.c.s
@@ -279,15 +327,39 @@ emu.s: emu.c.s
 
 # target to generate assembly for a file
 emu.c.s:
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/emu.c.s
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/emu.c.s
 .PHONY : emu.c.s
+
+instruction.o: instruction.c.o
+.PHONY : instruction.o
+
+# target to build an object file
+instruction.c.o:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/instruction.c.o
+.PHONY : instruction.c.o
+
+instruction.i: instruction.c.i
+.PHONY : instruction.i
+
+# target to preprocess a source file
+instruction.c.i:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/instruction.c.i
+.PHONY : instruction.c.i
+
+instruction.s: instruction.c.s
+.PHONY : instruction.s
+
+# target to generate assembly for a file
+instruction.c.s:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/instruction.c.s
+.PHONY : instruction.c.s
 
 ppu.o: ppu.c.o
 .PHONY : ppu.o
 
 # target to build an object file
 ppu.c.o:
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/ppu.c.o
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/ppu.c.o
 .PHONY : ppu.c.o
 
 ppu.i: ppu.c.i
@@ -295,7 +367,7 @@ ppu.i: ppu.c.i
 
 # target to preprocess a source file
 ppu.c.i:
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/ppu.c.i
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/ppu.c.i
 .PHONY : ppu.c.i
 
 ppu.s: ppu.c.s
@@ -303,7 +375,7 @@ ppu.s: ppu.c.s
 
 # target to generate assembly for a file
 ppu.c.s:
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/ppu.c.s
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/ppu.c.s
 .PHONY : ppu.c.s
 
 timer.o: timer.c.o
@@ -311,7 +383,7 @@ timer.o: timer.c.o
 
 # target to build an object file
 timer.c.o:
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/timer.c.o
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/timer.c.o
 .PHONY : timer.c.o
 
 timer.i: timer.c.i
@@ -319,7 +391,7 @@ timer.i: timer.c.i
 
 # target to preprocess a source file
 timer.c.i:
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/timer.c.i
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/timer.c.i
 .PHONY : timer.c.i
 
 timer.s: timer.c.s
@@ -327,7 +399,7 @@ timer.s: timer.c.s
 
 # target to generate assembly for a file
 timer.c.s:
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/timer.c.s
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/timer.c.s
 .PHONY : timer.c.s
 
 # Help Target
@@ -353,9 +425,18 @@ help:
 	@echo "... cpu.o"
 	@echo "... cpu.i"
 	@echo "... cpu.s"
+	@echo "... cpu_proc.o"
+	@echo "... cpu_proc.i"
+	@echo "... cpu_proc.s"
+	@echo "... cpu_util.o"
+	@echo "... cpu_util.i"
+	@echo "... cpu_util.s"
 	@echo "... emu.o"
 	@echo "... emu.i"
 	@echo "... emu.s"
+	@echo "... instruction.o"
+	@echo "... instruction.i"
+	@echo "... instruction.s"
 	@echo "... ppu.o"
 	@echo "... ppu.i"
 	@echo "... ppu.s"
@@ -373,7 +454,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build && $(CMAKE_COMMAND) -P /home/hnin/Documents/Projects/GameBoyEmulator/build/CMakeFiles/VerifyGlobs.cmake
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(CMAKE_COMMAND) -P "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/VerifyGlobs.cmake"
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

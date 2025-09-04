@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /opt/homebrew/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E rm -f
+RM = /opt/homebrew/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hnin/Documents/Projects/GameBoyEmulator
+CMAKE_SOURCE_DIR = "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hnin/Documents/Projects/GameBoyEmulator/build
+CMAKE_BINARY_DIR = "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build"
 
 # Include any dependencies generated for this target.
 include lib/CMakeFiles/emu.dir/depend.make
@@ -73,95 +73,140 @@ lib/CMakeFiles/emu.dir/codegen:
 .PHONY : lib/CMakeFiles/emu.dir/codegen
 
 lib/CMakeFiles/emu.dir/bus.c.o: lib/CMakeFiles/emu.dir/flags.make
-lib/CMakeFiles/emu.dir/bus.c.o: /home/hnin/Documents/Projects/GameBoyEmulator/lib/bus.c
+lib/CMakeFiles/emu.dir/bus.c.o: /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/lib/bus.c
 lib/CMakeFiles/emu.dir/bus.c.o: lib/CMakeFiles/emu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hnin/Documents/Projects/GameBoyEmulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/CMakeFiles/emu.dir/bus.c.o"
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/emu.dir/bus.c.o -MF CMakeFiles/emu.dir/bus.c.o.d -o CMakeFiles/emu.dir/bus.c.o -c /home/hnin/Documents/Projects/GameBoyEmulator/lib/bus.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/CMakeFiles/emu.dir/bus.c.o"
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/lib" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/emu.dir/bus.c.o -MF CMakeFiles/emu.dir/bus.c.o.d -o CMakeFiles/emu.dir/bus.c.o -c "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/bus.c"
 
 lib/CMakeFiles/emu.dir/bus.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/emu.dir/bus.c.i"
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hnin/Documents/Projects/GameBoyEmulator/lib/bus.c > CMakeFiles/emu.dir/bus.c.i
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/lib" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/bus.c" > CMakeFiles/emu.dir/bus.c.i
 
 lib/CMakeFiles/emu.dir/bus.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/emu.dir/bus.c.s"
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hnin/Documents/Projects/GameBoyEmulator/lib/bus.c -o CMakeFiles/emu.dir/bus.c.s
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/lib" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/bus.c" -o CMakeFiles/emu.dir/bus.c.s
 
 lib/CMakeFiles/emu.dir/cart.c.o: lib/CMakeFiles/emu.dir/flags.make
-lib/CMakeFiles/emu.dir/cart.c.o: /home/hnin/Documents/Projects/GameBoyEmulator/lib/cart.c
+lib/CMakeFiles/emu.dir/cart.c.o: /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/lib/cart.c
 lib/CMakeFiles/emu.dir/cart.c.o: lib/CMakeFiles/emu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hnin/Documents/Projects/GameBoyEmulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object lib/CMakeFiles/emu.dir/cart.c.o"
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/emu.dir/cart.c.o -MF CMakeFiles/emu.dir/cart.c.o.d -o CMakeFiles/emu.dir/cart.c.o -c /home/hnin/Documents/Projects/GameBoyEmulator/lib/cart.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object lib/CMakeFiles/emu.dir/cart.c.o"
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/lib" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/emu.dir/cart.c.o -MF CMakeFiles/emu.dir/cart.c.o.d -o CMakeFiles/emu.dir/cart.c.o -c "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/cart.c"
 
 lib/CMakeFiles/emu.dir/cart.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/emu.dir/cart.c.i"
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hnin/Documents/Projects/GameBoyEmulator/lib/cart.c > CMakeFiles/emu.dir/cart.c.i
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/lib" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/cart.c" > CMakeFiles/emu.dir/cart.c.i
 
 lib/CMakeFiles/emu.dir/cart.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/emu.dir/cart.c.s"
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hnin/Documents/Projects/GameBoyEmulator/lib/cart.c -o CMakeFiles/emu.dir/cart.c.s
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/lib" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/cart.c" -o CMakeFiles/emu.dir/cart.c.s
 
 lib/CMakeFiles/emu.dir/cpu.c.o: lib/CMakeFiles/emu.dir/flags.make
-lib/CMakeFiles/emu.dir/cpu.c.o: /home/hnin/Documents/Projects/GameBoyEmulator/lib/cpu.c
+lib/CMakeFiles/emu.dir/cpu.c.o: /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/lib/cpu.c
 lib/CMakeFiles/emu.dir/cpu.c.o: lib/CMakeFiles/emu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hnin/Documents/Projects/GameBoyEmulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object lib/CMakeFiles/emu.dir/cpu.c.o"
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/emu.dir/cpu.c.o -MF CMakeFiles/emu.dir/cpu.c.o.d -o CMakeFiles/emu.dir/cpu.c.o -c /home/hnin/Documents/Projects/GameBoyEmulator/lib/cpu.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object lib/CMakeFiles/emu.dir/cpu.c.o"
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/lib" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/emu.dir/cpu.c.o -MF CMakeFiles/emu.dir/cpu.c.o.d -o CMakeFiles/emu.dir/cpu.c.o -c "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/cpu.c"
 
 lib/CMakeFiles/emu.dir/cpu.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/emu.dir/cpu.c.i"
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hnin/Documents/Projects/GameBoyEmulator/lib/cpu.c > CMakeFiles/emu.dir/cpu.c.i
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/lib" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/cpu.c" > CMakeFiles/emu.dir/cpu.c.i
 
 lib/CMakeFiles/emu.dir/cpu.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/emu.dir/cpu.c.s"
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hnin/Documents/Projects/GameBoyEmulator/lib/cpu.c -o CMakeFiles/emu.dir/cpu.c.s
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/lib" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/cpu.c" -o CMakeFiles/emu.dir/cpu.c.s
+
+lib/CMakeFiles/emu.dir/cpu_proc.c.o: lib/CMakeFiles/emu.dir/flags.make
+lib/CMakeFiles/emu.dir/cpu_proc.c.o: /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/lib/cpu_proc.c
+lib/CMakeFiles/emu.dir/cpu_proc.c.o: lib/CMakeFiles/emu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object lib/CMakeFiles/emu.dir/cpu_proc.c.o"
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/lib" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/emu.dir/cpu_proc.c.o -MF CMakeFiles/emu.dir/cpu_proc.c.o.d -o CMakeFiles/emu.dir/cpu_proc.c.o -c "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/cpu_proc.c"
+
+lib/CMakeFiles/emu.dir/cpu_proc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/emu.dir/cpu_proc.c.i"
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/lib" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/cpu_proc.c" > CMakeFiles/emu.dir/cpu_proc.c.i
+
+lib/CMakeFiles/emu.dir/cpu_proc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/emu.dir/cpu_proc.c.s"
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/lib" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/cpu_proc.c" -o CMakeFiles/emu.dir/cpu_proc.c.s
+
+lib/CMakeFiles/emu.dir/cpu_util.c.o: lib/CMakeFiles/emu.dir/flags.make
+lib/CMakeFiles/emu.dir/cpu_util.c.o: /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/lib/cpu_util.c
+lib/CMakeFiles/emu.dir/cpu_util.c.o: lib/CMakeFiles/emu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object lib/CMakeFiles/emu.dir/cpu_util.c.o"
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/lib" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/emu.dir/cpu_util.c.o -MF CMakeFiles/emu.dir/cpu_util.c.o.d -o CMakeFiles/emu.dir/cpu_util.c.o -c "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/cpu_util.c"
+
+lib/CMakeFiles/emu.dir/cpu_util.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/emu.dir/cpu_util.c.i"
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/lib" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/cpu_util.c" > CMakeFiles/emu.dir/cpu_util.c.i
+
+lib/CMakeFiles/emu.dir/cpu_util.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/emu.dir/cpu_util.c.s"
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/lib" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/cpu_util.c" -o CMakeFiles/emu.dir/cpu_util.c.s
 
 lib/CMakeFiles/emu.dir/emu.c.o: lib/CMakeFiles/emu.dir/flags.make
-lib/CMakeFiles/emu.dir/emu.c.o: /home/hnin/Documents/Projects/GameBoyEmulator/lib/emu.c
+lib/CMakeFiles/emu.dir/emu.c.o: /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/lib/emu.c
 lib/CMakeFiles/emu.dir/emu.c.o: lib/CMakeFiles/emu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hnin/Documents/Projects/GameBoyEmulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object lib/CMakeFiles/emu.dir/emu.c.o"
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/emu.dir/emu.c.o -MF CMakeFiles/emu.dir/emu.c.o.d -o CMakeFiles/emu.dir/emu.c.o -c /home/hnin/Documents/Projects/GameBoyEmulator/lib/emu.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object lib/CMakeFiles/emu.dir/emu.c.o"
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/lib" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/emu.dir/emu.c.o -MF CMakeFiles/emu.dir/emu.c.o.d -o CMakeFiles/emu.dir/emu.c.o -c "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/emu.c"
 
 lib/CMakeFiles/emu.dir/emu.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/emu.dir/emu.c.i"
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hnin/Documents/Projects/GameBoyEmulator/lib/emu.c > CMakeFiles/emu.dir/emu.c.i
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/lib" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/emu.c" > CMakeFiles/emu.dir/emu.c.i
 
 lib/CMakeFiles/emu.dir/emu.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/emu.dir/emu.c.s"
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hnin/Documents/Projects/GameBoyEmulator/lib/emu.c -o CMakeFiles/emu.dir/emu.c.s
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/lib" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/emu.c" -o CMakeFiles/emu.dir/emu.c.s
+
+lib/CMakeFiles/emu.dir/instruction.c.o: lib/CMakeFiles/emu.dir/flags.make
+lib/CMakeFiles/emu.dir/instruction.c.o: /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/lib/instruction.c
+lib/CMakeFiles/emu.dir/instruction.c.o: lib/CMakeFiles/emu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object lib/CMakeFiles/emu.dir/instruction.c.o"
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/lib" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/emu.dir/instruction.c.o -MF CMakeFiles/emu.dir/instruction.c.o.d -o CMakeFiles/emu.dir/instruction.c.o -c "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/instruction.c"
+
+lib/CMakeFiles/emu.dir/instruction.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/emu.dir/instruction.c.i"
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/lib" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/instruction.c" > CMakeFiles/emu.dir/instruction.c.i
+
+lib/CMakeFiles/emu.dir/instruction.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/emu.dir/instruction.c.s"
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/lib" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/instruction.c" -o CMakeFiles/emu.dir/instruction.c.s
 
 lib/CMakeFiles/emu.dir/ppu.c.o: lib/CMakeFiles/emu.dir/flags.make
-lib/CMakeFiles/emu.dir/ppu.c.o: /home/hnin/Documents/Projects/GameBoyEmulator/lib/ppu.c
+lib/CMakeFiles/emu.dir/ppu.c.o: /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/lib/ppu.c
 lib/CMakeFiles/emu.dir/ppu.c.o: lib/CMakeFiles/emu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hnin/Documents/Projects/GameBoyEmulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object lib/CMakeFiles/emu.dir/ppu.c.o"
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/emu.dir/ppu.c.o -MF CMakeFiles/emu.dir/ppu.c.o.d -o CMakeFiles/emu.dir/ppu.c.o -c /home/hnin/Documents/Projects/GameBoyEmulator/lib/ppu.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building C object lib/CMakeFiles/emu.dir/ppu.c.o"
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/lib" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/emu.dir/ppu.c.o -MF CMakeFiles/emu.dir/ppu.c.o.d -o CMakeFiles/emu.dir/ppu.c.o -c "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/ppu.c"
 
 lib/CMakeFiles/emu.dir/ppu.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/emu.dir/ppu.c.i"
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hnin/Documents/Projects/GameBoyEmulator/lib/ppu.c > CMakeFiles/emu.dir/ppu.c.i
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/lib" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/ppu.c" > CMakeFiles/emu.dir/ppu.c.i
 
 lib/CMakeFiles/emu.dir/ppu.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/emu.dir/ppu.c.s"
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hnin/Documents/Projects/GameBoyEmulator/lib/ppu.c -o CMakeFiles/emu.dir/ppu.c.s
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/lib" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/ppu.c" -o CMakeFiles/emu.dir/ppu.c.s
 
 lib/CMakeFiles/emu.dir/timer.c.o: lib/CMakeFiles/emu.dir/flags.make
-lib/CMakeFiles/emu.dir/timer.c.o: /home/hnin/Documents/Projects/GameBoyEmulator/lib/timer.c
+lib/CMakeFiles/emu.dir/timer.c.o: /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/lib/timer.c
 lib/CMakeFiles/emu.dir/timer.c.o: lib/CMakeFiles/emu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hnin/Documents/Projects/GameBoyEmulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object lib/CMakeFiles/emu.dir/timer.c.o"
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/emu.dir/timer.c.o -MF CMakeFiles/emu.dir/timer.c.o.d -o CMakeFiles/emu.dir/timer.c.o -c /home/hnin/Documents/Projects/GameBoyEmulator/lib/timer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building C object lib/CMakeFiles/emu.dir/timer.c.o"
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/lib" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/emu.dir/timer.c.o -MF CMakeFiles/emu.dir/timer.c.o.d -o CMakeFiles/emu.dir/timer.c.o -c "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/timer.c"
 
 lib/CMakeFiles/emu.dir/timer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/emu.dir/timer.c.i"
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hnin/Documents/Projects/GameBoyEmulator/lib/timer.c > CMakeFiles/emu.dir/timer.c.i
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/lib" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/timer.c" > CMakeFiles/emu.dir/timer.c.i
 
 lib/CMakeFiles/emu.dir/timer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/emu.dir/timer.c.s"
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hnin/Documents/Projects/GameBoyEmulator/lib/timer.c -o CMakeFiles/emu.dir/timer.c.s
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/lib" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/timer.c" -o CMakeFiles/emu.dir/timer.c.s
 
 # Object files for target emu
 emu_OBJECTS = \
 "CMakeFiles/emu.dir/bus.c.o" \
 "CMakeFiles/emu.dir/cart.c.o" \
 "CMakeFiles/emu.dir/cpu.c.o" \
+"CMakeFiles/emu.dir/cpu_proc.c.o" \
+"CMakeFiles/emu.dir/cpu_util.c.o" \
 "CMakeFiles/emu.dir/emu.c.o" \
+"CMakeFiles/emu.dir/instruction.c.o" \
 "CMakeFiles/emu.dir/ppu.c.o" \
 "CMakeFiles/emu.dir/timer.c.o"
 
@@ -171,24 +216,27 @@ emu_EXTERNAL_OBJECTS =
 lib/libemu.a: lib/CMakeFiles/emu.dir/bus.c.o
 lib/libemu.a: lib/CMakeFiles/emu.dir/cart.c.o
 lib/libemu.a: lib/CMakeFiles/emu.dir/cpu.c.o
+lib/libemu.a: lib/CMakeFiles/emu.dir/cpu_proc.c.o
+lib/libemu.a: lib/CMakeFiles/emu.dir/cpu_util.c.o
 lib/libemu.a: lib/CMakeFiles/emu.dir/emu.c.o
+lib/libemu.a: lib/CMakeFiles/emu.dir/instruction.c.o
 lib/libemu.a: lib/CMakeFiles/emu.dir/ppu.c.o
 lib/libemu.a: lib/CMakeFiles/emu.dir/timer.c.o
 lib/libemu.a: lib/CMakeFiles/emu.dir/build.make
 lib/libemu.a: lib/CMakeFiles/emu.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/hnin/Documents/Projects/GameBoyEmulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C static library libemu.a"
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build/lib && $(CMAKE_COMMAND) -P CMakeFiles/emu.dir/cmake_clean_target.cmake
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/emu.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Linking C static library libemu.a"
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/lib" && $(CMAKE_COMMAND) -P CMakeFiles/emu.dir/cmake_clean_target.cmake
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/lib" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/emu.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 lib/CMakeFiles/emu.dir/build: lib/libemu.a
 .PHONY : lib/CMakeFiles/emu.dir/build
 
 lib/CMakeFiles/emu.dir/clean:
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build/lib && $(CMAKE_COMMAND) -P CMakeFiles/emu.dir/cmake_clean.cmake
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/lib" && $(CMAKE_COMMAND) -P CMakeFiles/emu.dir/cmake_clean.cmake
 .PHONY : lib/CMakeFiles/emu.dir/clean
 
 lib/CMakeFiles/emu.dir/depend:
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hnin/Documents/Projects/GameBoyEmulator /home/hnin/Documents/Projects/GameBoyEmulator/lib /home/hnin/Documents/Projects/GameBoyEmulator/build /home/hnin/Documents/Projects/GameBoyEmulator/build/lib /home/hnin/Documents/Projects/GameBoyEmulator/build/lib/CMakeFiles/emu.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator" "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib" "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/lib" "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/lib/CMakeFiles/emu.dir/DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : lib/CMakeFiles/emu.dir/depend
 

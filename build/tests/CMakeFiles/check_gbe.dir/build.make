@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /opt/homebrew/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E rm -f
+RM = /opt/homebrew/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hnin/Documents/Projects/GameBoyEmulator
+CMAKE_SOURCE_DIR = "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hnin/Documents/Projects/GameBoyEmulator/build
+CMAKE_BINARY_DIR = "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build"
 
 # Include any dependencies generated for this target.
 include tests/CMakeFiles/check_gbe.dir/depend.make
@@ -73,18 +73,18 @@ tests/CMakeFiles/check_gbe.dir/codegen:
 .PHONY : tests/CMakeFiles/check_gbe.dir/codegen
 
 tests/CMakeFiles/check_gbe.dir/check_gbe.c.o: tests/CMakeFiles/check_gbe.dir/flags.make
-tests/CMakeFiles/check_gbe.dir/check_gbe.c.o: /home/hnin/Documents/Projects/GameBoyEmulator/tests/check_gbe.c
+tests/CMakeFiles/check_gbe.dir/check_gbe.c.o: /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/tests/check_gbe.c
 tests/CMakeFiles/check_gbe.dir/check_gbe.c.o: tests/CMakeFiles/check_gbe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hnin/Documents/Projects/GameBoyEmulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object tests/CMakeFiles/check_gbe.dir/check_gbe.c.o"
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT tests/CMakeFiles/check_gbe.dir/check_gbe.c.o -MF CMakeFiles/check_gbe.dir/check_gbe.c.o.d -o CMakeFiles/check_gbe.dir/check_gbe.c.o -c /home/hnin/Documents/Projects/GameBoyEmulator/tests/check_gbe.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object tests/CMakeFiles/check_gbe.dir/check_gbe.c.o"
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/tests" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT tests/CMakeFiles/check_gbe.dir/check_gbe.c.o -MF CMakeFiles/check_gbe.dir/check_gbe.c.o.d -o CMakeFiles/check_gbe.dir/check_gbe.c.o -c "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/tests/check_gbe.c"
 
 tests/CMakeFiles/check_gbe.dir/check_gbe.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/check_gbe.dir/check_gbe.c.i"
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hnin/Documents/Projects/GameBoyEmulator/tests/check_gbe.c > CMakeFiles/check_gbe.dir/check_gbe.c.i
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/tests" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/tests/check_gbe.c" > CMakeFiles/check_gbe.dir/check_gbe.c.i
 
 tests/CMakeFiles/check_gbe.dir/check_gbe.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/check_gbe.dir/check_gbe.c.s"
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hnin/Documents/Projects/GameBoyEmulator/tests/check_gbe.c -o CMakeFiles/check_gbe.dir/check_gbe.c.s
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/tests" && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/tests/check_gbe.c" -o CMakeFiles/check_gbe.dir/check_gbe.c.s
 
 # Object files for target check_gbe
 check_gbe_OBJECTS = \
@@ -95,28 +95,26 @@ check_gbe_EXTERNAL_OBJECTS =
 
 tests/check_gbe: tests/CMakeFiles/check_gbe.dir/check_gbe.c.o
 tests/check_gbe: tests/CMakeFiles/check_gbe.dir/build.make
-tests/check_gbe: tests/CMakeFiles/check_gbe.dir/compiler_depend.ts
 tests/check_gbe: lib/libemu.a
-tests/check_gbe: /usr/lib/aarch64-linux-gnu/libcheck.a
-tests/check_gbe: /usr/lib/aarch64-linux-gnu/libSDL2.so
-tests/check_gbe: /usr/lib/aarch64-linux-gnu/libSDL2_ttf.so
-tests/check_gbe: /usr/lib/aarch64-linux-gnu/libSDL2main.a
-tests/check_gbe: /usr/lib/aarch64-linux-gnu/libSDL2.so
-tests/check_gbe: /usr/lib/aarch64-linux-gnu/libSDL2_ttf.so
-tests/check_gbe: /usr/lib/aarch64-linux-gnu/libSDL2main.a
+tests/check_gbe: /opt/homebrew/lib/libSDL2.dylib
+tests/check_gbe: /opt/homebrew/lib/libSDL2_ttf.dylib
+tests/check_gbe: /opt/homebrew/lib/libSDL2main.a
+tests/check_gbe: /opt/homebrew/lib/libSDL2.dylib
+tests/check_gbe: /opt/homebrew/lib/libSDL2_ttf.dylib
+tests/check_gbe: /opt/homebrew/lib/libSDL2main.a
 tests/check_gbe: tests/CMakeFiles/check_gbe.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/hnin/Documents/Projects/GameBoyEmulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable check_gbe"
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/check_gbe.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable check_gbe"
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/tests" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/check_gbe.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 tests/CMakeFiles/check_gbe.dir/build: tests/check_gbe
 .PHONY : tests/CMakeFiles/check_gbe.dir/build
 
 tests/CMakeFiles/check_gbe.dir/clean:
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build/tests && $(CMAKE_COMMAND) -P CMakeFiles/check_gbe.dir/cmake_clean.cmake
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/tests" && $(CMAKE_COMMAND) -P CMakeFiles/check_gbe.dir/cmake_clean.cmake
 .PHONY : tests/CMakeFiles/check_gbe.dir/clean
 
 tests/CMakeFiles/check_gbe.dir/depend:
-	cd /home/hnin/Documents/Projects/GameBoyEmulator/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hnin/Documents/Projects/GameBoyEmulator /home/hnin/Documents/Projects/GameBoyEmulator/tests /home/hnin/Documents/Projects/GameBoyEmulator/build /home/hnin/Documents/Projects/GameBoyEmulator/build/tests /home/hnin/Documents/Projects/GameBoyEmulator/build/tests/CMakeFiles/check_gbe.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator" "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/tests" "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/tests" "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/tests/CMakeFiles/check_gbe.dir/DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : tests/CMakeFiles/check_gbe.dir/depend
 
