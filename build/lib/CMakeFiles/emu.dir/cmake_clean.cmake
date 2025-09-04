@@ -19,6 +19,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/emu.dir/ppu.c.o.d"
   "CMakeFiles/emu.dir/ram.c.o"
   "CMakeFiles/emu.dir/ram.c.o.d"
+  "CMakeFiles/emu.dir/stack.c.o"
+  "CMakeFiles/emu.dir/stack.c.o.d"
   "CMakeFiles/emu.dir/timer.c.o"
   "CMakeFiles/emu.dir/timer.c.o.d"
   "libemu.a"

@@ -57,3 +57,5 @@ void fetch_data();
 
 u8 cpu_get_ie_register();
 void cpu_set_ie_register(u8 n);
+
+cpu_registers *cpu_get_regs();

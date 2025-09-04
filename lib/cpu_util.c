@@ -60,3 +60,7 @@ void cpu_set_reg(reg_type rt, u16 val) {
             break;            
     }
 }
+
+cpu_registers *cpu_get_regs() {
+    return &ctx.regs;
+}

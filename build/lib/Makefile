@@ -426,6 +426,30 @@ ram.c.s:
 	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/ram.c.s
 .PHONY : ram.c.s
 
+stack.o: stack.c.o
+.PHONY : stack.o
+
+# target to build an object file
+stack.c.o:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/stack.c.o
+.PHONY : stack.c.o
+
+stack.i: stack.c.i
+.PHONY : stack.i
+
+# target to preprocess a source file
+stack.c.i:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/stack.c.i
+.PHONY : stack.c.i
+
+stack.s: stack.c.s
+.PHONY : stack.s
+
+# target to generate assembly for a file
+stack.c.s:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/stack.c.s
+.PHONY : stack.c.s
+
 timer.o: timer.c.o
 .PHONY : timer.o
 
@@ -494,6 +518,9 @@ help:
 	@echo "... ram.o"
 	@echo "... ram.i"
 	@echo "... ram.s"
+	@echo "... stack.o"
+	@echo "... stack.i"
+	@echo "... stack.s"
 	@echo "... timer.o"
 	@echo "... timer.i"
 	@echo "... timer.s"

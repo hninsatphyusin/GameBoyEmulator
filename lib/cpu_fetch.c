@@ -82,22 +82,25 @@ void fetch_data() {
 
         case AM_HLI_R: {
             ctx.fetched_data = cpu_read_reg(ctx.curr_instr->reg_2);
-            ctx.fetched_data = cpu_read_reg(ctx.curr_instr->reg_1);
+            ctx.mem_dest = cpu_read_reg(ctx.curr_instr->reg_1);
             ctx.is_dest_mem = true;
             cpu_set_reg(RT_HL, cpu_read_reg(RT_HL) + 1);
+            return;
         }
 
         case AM_HLD_R: {
             ctx.fetched_data = cpu_read_reg(ctx.curr_instr->reg_2);
-            ctx.fetched_data = cpu_read_reg(ctx.curr_instr->reg_1);
+            ctx.mem_dest = cpu_read_reg(ctx.curr_instr->reg_1);
             ctx.is_dest_mem = true;
             cpu_set_reg(RT_HL, cpu_read_reg(RT_HL) - 1);
+            return;
         }
 
         case AM_R_A8: {
             ctx.fetched_data = bus_read(ctx.regs.pc);
             emu_cycles(1);
             ctx.regs.pc++;
+            return;
         }
 
         case AM_A8_R: {

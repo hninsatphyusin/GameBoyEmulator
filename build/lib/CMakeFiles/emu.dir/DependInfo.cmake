@@ -18,6 +18,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/instruction.c" "lib/CMakeFiles/emu.dir/instruction.c.o" "gcc" "lib/CMakeFiles/emu.dir/instruction.c.o.d"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/ppu.c" "lib/CMakeFiles/emu.dir/ppu.c.o" "gcc" "lib/CMakeFiles/emu.dir/ppu.c.o.d"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/ram.c" "lib/CMakeFiles/emu.dir/ram.c.o" "gcc" "lib/CMakeFiles/emu.dir/ram.c.o.d"
+  "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/stack.c" "lib/CMakeFiles/emu.dir/stack.c.o" "gcc" "lib/CMakeFiles/emu.dir/stack.c.o.d"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/timer.c" "lib/CMakeFiles/emu.dir/timer.c.o" "gcc" "lib/CMakeFiles/emu.dir/timer.c.o.d"
   )
 

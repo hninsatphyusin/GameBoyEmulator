@@ -13,6 +13,7 @@ set(OLD_GLOB
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/include/instruction.h"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/include/ppu.h"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/include/ram.h"
+  "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/include/stack.h"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/include/timer.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -33,6 +34,7 @@ set(OLD_GLOB
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/instruction.c"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/ppu.c"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/ram.c"
+  "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/stack.c"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/timer.c"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
