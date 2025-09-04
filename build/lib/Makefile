@@ -402,6 +402,30 @@ ppu.c.s:
 	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/ppu.c.s
 .PHONY : ppu.c.s
 
+ram.o: ram.c.o
+.PHONY : ram.o
+
+# target to build an object file
+ram.c.o:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/ram.c.o
+.PHONY : ram.c.o
+
+ram.i: ram.c.i
+.PHONY : ram.i
+
+# target to preprocess a source file
+ram.c.i:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/ram.c.i
+.PHONY : ram.c.i
+
+ram.s: ram.c.s
+.PHONY : ram.s
+
+# target to generate assembly for a file
+ram.c.s:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/ram.c.s
+.PHONY : ram.c.s
+
 timer.o: timer.c.o
 .PHONY : timer.o
 
@@ -467,6 +491,9 @@ help:
 	@echo "... ppu.o"
 	@echo "... ppu.i"
 	@echo "... ppu.s"
+	@echo "... ram.o"
+	@echo "... ram.i"
+	@echo "... ram.s"
 	@echo "... timer.o"
 	@echo "... timer.i"
 	@echo "... timer.s"

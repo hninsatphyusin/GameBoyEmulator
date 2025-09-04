@@ -35,6 +35,7 @@ typedef struct {
     bool halted; 
     bool stepping; //for debugging purpose
     bool int_master_enabled;
+    u8 ie_register;
 } cpu_context;
 
 void cpu_init();
@@ -53,3 +54,6 @@ char *inst_name(in_type t);
 
 void cpu_set_reg(reg_type rt, u16 val);
 void fetch_data();
+
+u8 cpu_get_ie_register();
+void cpu_set_ie_register(u8 n);

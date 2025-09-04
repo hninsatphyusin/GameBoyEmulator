@@ -36,6 +36,7 @@ static void proc_ld(cpu_context *ctx) {
 
         cpu_set_flags(ctx, 0, 0, hflag, cflag);
         cpu_set_reg(ctx->curr_instr->reg_1, cpu_read_reg(ctx->curr_instr->reg_2) + (char)ctx->fetched_data);
+        return;
     }
     //main case is to set a register to a value 
     cpu_set_reg(ctx->curr_instr->reg_1, ctx->fetched_data);
@@ -79,14 +80,28 @@ static void proc_xor(cpu_context *ctx) {
 }
 
 
+static void proc_ldh(cpu_context *ctx) {
+    //used to transfer data between register A and high ram
+    if (ctx->curr_instr->reg_1 == RT_A) {
+        //its to load the value from memory address into register A
+        cpu_set_reg(ctx->curr_instr->reg_1, bus_read(0xFF00 | ctx->fetched_data));
+    } else {
+        //stores the value of register A into memory address (the memory addres is 0xFF00 + addr)
+        bus_write(0xFF00 | ctx->fetched_data, ctx->regs.a);
+    }
+    emu_cycles(1);
+}
+
 static IN_PROC processors[] = {
     [IN_NONE] = proc_none, //IN_NONE
     [IN_NOP] = proc_nop,
     [IN_LD] = proc_ld, //load instruction
     [IN_JP] = proc_jp,
     [IN_DI] = proc_di, //disable interrupts
-    [IN_XOR] = proc_xor
+    [IN_XOR] = proc_xor, 
+    [IN_LDH] = proc_ldh
 };
+
 
 IN_PROC inst_get_processor(in_type type) {
     return processors[type];

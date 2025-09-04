@@ -80,4 +80,7 @@ lib/CMakeFiles/emu.dir/bus.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/malloc/_ptrcheck.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_dev_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_mode_t.h \
-  /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/cart.h
+  /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/cart.h \
+  /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/ram.h \
+  /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/cpu.h \
+  /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/instruction.h

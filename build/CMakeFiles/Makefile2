@@ -150,12 +150,12 @@ tests/clean: tests/CMakeFiles/check_gbe.dir/clean
 lib/CMakeFiles/emu.dir/all:
 	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" --progress-num=3,4,5,6,7,8,9,10,11,12,13 "Built target emu"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" --progress-num=3,4,5,6,7,8,9,10,11,12,13,14 "Built target emu"
 .PHONY : lib/CMakeFiles/emu.dir/all
 
 # Build rule for subdir invocation for target.
 lib/CMakeFiles/emu.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" 11
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/emu.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" 0
 .PHONY : lib/CMakeFiles/emu.dir/rule
@@ -167,7 +167,7 @@ emu: lib/CMakeFiles/emu.dir/rule
 # codegen rule for target.
 lib/CMakeFiles/emu.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" --progress-num=3,4,5,6,7,8,9,10,11,12,13 "Finished codegen for target emu"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" --progress-num=3,4,5,6,7,8,9,10,11,12,13,14 "Finished codegen for target emu"
 .PHONY : lib/CMakeFiles/emu.dir/codegen
 
 # clean rule for target.
@@ -182,12 +182,12 @@ lib/CMakeFiles/emu.dir/clean:
 gbemu/CMakeFiles/gbemu.dir/all: lib/CMakeFiles/emu.dir/all
 	$(MAKE) $(MAKESILENT) -f gbemu/CMakeFiles/gbemu.dir/build.make gbemu/CMakeFiles/gbemu.dir/depend
 	$(MAKE) $(MAKESILENT) -f gbemu/CMakeFiles/gbemu.dir/build.make gbemu/CMakeFiles/gbemu.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" --progress-num=14,15 "Built target gbemu"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" --progress-num=15,16 "Built target gbemu"
 .PHONY : gbemu/CMakeFiles/gbemu.dir/all
 
 # Build rule for subdir invocation for target.
 gbemu/CMakeFiles/gbemu.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" 13
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gbemu/CMakeFiles/gbemu.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" 0
 .PHONY : gbemu/CMakeFiles/gbemu.dir/rule
@@ -199,7 +199,7 @@ gbemu: gbemu/CMakeFiles/gbemu.dir/rule
 # codegen rule for target.
 gbemu/CMakeFiles/gbemu.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f gbemu/CMakeFiles/gbemu.dir/build.make gbemu/CMakeFiles/gbemu.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" --progress-num=14,15 "Finished codegen for target gbemu"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" --progress-num=15,16 "Finished codegen for target gbemu"
 .PHONY : gbemu/CMakeFiles/gbemu.dir/codegen
 
 # clean rule for target.
@@ -219,7 +219,7 @@ tests/CMakeFiles/check_gbe.dir/all: lib/CMakeFiles/emu.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/check_gbe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" 13
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/check_gbe.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" 0
 .PHONY : tests/CMakeFiles/check_gbe.dir/rule
