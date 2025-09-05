@@ -16,10 +16,12 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/cpu_util.c" "lib/CMakeFiles/emu.dir/cpu_util.c.o" "gcc" "lib/CMakeFiles/emu.dir/cpu_util.c.o.d"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/emu.c" "lib/CMakeFiles/emu.dir/emu.c.o" "gcc" "lib/CMakeFiles/emu.dir/emu.c.o.d"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/instruction.c" "lib/CMakeFiles/emu.dir/instruction.c.o" "gcc" "lib/CMakeFiles/emu.dir/instruction.c.o.d"
+  "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/interrrupts.c" "lib/CMakeFiles/emu.dir/interrrupts.c.o" "gcc" "lib/CMakeFiles/emu.dir/interrrupts.c.o.d"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/ppu.c" "lib/CMakeFiles/emu.dir/ppu.c.o" "gcc" "lib/CMakeFiles/emu.dir/ppu.c.o.d"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/ram.c" "lib/CMakeFiles/emu.dir/ram.c.o" "gcc" "lib/CMakeFiles/emu.dir/ram.c.o.d"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/stack.c" "lib/CMakeFiles/emu.dir/stack.c.o" "gcc" "lib/CMakeFiles/emu.dir/stack.c.o.d"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/timer.c" "lib/CMakeFiles/emu.dir/timer.c.o" "gcc" "lib/CMakeFiles/emu.dir/timer.c.o.d"
+  "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/ui.c" "lib/CMakeFiles/emu.dir/ui.c.o" "gcc" "lib/CMakeFiles/emu.dir/ui.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

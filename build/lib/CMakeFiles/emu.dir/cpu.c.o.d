@@ -83,4 +83,5 @@ lib/CMakeFiles/emu.dir/cpu.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_mode_t.h \
   /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/instruction.h \
   /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/bus.h \
-  /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/emu.h
+  /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/emu.h \
+  /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/interrupts.h

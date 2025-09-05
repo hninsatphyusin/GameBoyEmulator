@@ -36,6 +36,8 @@ typedef struct {
     bool stepping; //for debugging purpose
     bool int_master_enabled;
     u8 ie_register;
+    bool enabling_ime;
+    u8 int_flags;
 } cpu_context;
 
 void cpu_init();
@@ -48,6 +50,8 @@ typedef void (*IN_PROC)(cpu_context *);
 IN_PROC inst_get_processor(in_type type);
 
 #define CPU_FLAG_Z BIT(ctx->regs.f, 7)
+#define CPU_FLAG_N BIT(ctx->regs.f, 6)
+#define CPU_FLAG_H BIT(ctx->regs.f, 5)
 #define CPU_FLAG_C BIT(ctx->regs.f, 4)
 
 char *inst_name(in_type t);
@@ -62,3 +66,7 @@ cpu_registers *cpu_get_regs();
 
 void cpu_set_reg8(reg_type r, u8 val);
 u8 cpu_read_reg8(reg_type r);
+
+
+u8 cpu_get_int_flags();
+void cpu_set_int_flags(u8 value);

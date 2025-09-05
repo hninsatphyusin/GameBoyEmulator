@@ -378,6 +378,30 @@ instruction.c.s:
 	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/instruction.c.s
 .PHONY : instruction.c.s
 
+interrrupts.o: interrrupts.c.o
+.PHONY : interrrupts.o
+
+# target to build an object file
+interrrupts.c.o:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/interrrupts.c.o
+.PHONY : interrrupts.c.o
+
+interrrupts.i: interrrupts.c.i
+.PHONY : interrrupts.i
+
+# target to preprocess a source file
+interrrupts.c.i:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/interrrupts.c.i
+.PHONY : interrrupts.c.i
+
+interrrupts.s: interrrupts.c.s
+.PHONY : interrrupts.s
+
+# target to generate assembly for a file
+interrrupts.c.s:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/interrrupts.c.s
+.PHONY : interrrupts.c.s
+
 ppu.o: ppu.c.o
 .PHONY : ppu.o
 
@@ -474,6 +498,30 @@ timer.c.s:
 	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/timer.c.s
 .PHONY : timer.c.s
 
+ui.o: ui.c.o
+.PHONY : ui.o
+
+# target to build an object file
+ui.c.o:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/ui.c.o
+.PHONY : ui.c.o
+
+ui.i: ui.c.i
+.PHONY : ui.i
+
+# target to preprocess a source file
+ui.c.i:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/ui.c.i
+.PHONY : ui.c.i
+
+ui.s: ui.c.s
+.PHONY : ui.s
+
+# target to generate assembly for a file
+ui.c.s:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/ui.c.s
+.PHONY : ui.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -512,6 +560,9 @@ help:
 	@echo "... instruction.o"
 	@echo "... instruction.i"
 	@echo "... instruction.s"
+	@echo "... interrrupts.o"
+	@echo "... interrrupts.i"
+	@echo "... interrrupts.s"
 	@echo "... ppu.o"
 	@echo "... ppu.i"
 	@echo "... ppu.s"
@@ -524,6 +575,9 @@ help:
 	@echo "... timer.o"
 	@echo "... timer.i"
 	@echo "... timer.s"
+	@echo "... ui.o"
+	@echo "... ui.i"
+	@echo "... ui.s"
 .PHONY : help
 
 

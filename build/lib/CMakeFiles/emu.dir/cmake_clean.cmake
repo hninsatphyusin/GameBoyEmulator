@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/emu.dir/emu.c.o.d"
   "CMakeFiles/emu.dir/instruction.c.o"
   "CMakeFiles/emu.dir/instruction.c.o.d"
+  "CMakeFiles/emu.dir/interrrupts.c.o"
+  "CMakeFiles/emu.dir/interrrupts.c.o.d"
   "CMakeFiles/emu.dir/ppu.c.o"
   "CMakeFiles/emu.dir/ppu.c.o.d"
   "CMakeFiles/emu.dir/ram.c.o"
@@ -23,6 +25,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/emu.dir/stack.c.o.d"
   "CMakeFiles/emu.dir/timer.c.o"
   "CMakeFiles/emu.dir/timer.c.o.d"
+  "CMakeFiles/emu.dir/ui.c.o"
+  "CMakeFiles/emu.dir/ui.c.o.d"
   "libemu.a"
   "libemu.pdb"
 )
