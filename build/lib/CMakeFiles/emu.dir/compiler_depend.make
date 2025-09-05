@@ -509,6 +509,7 @@ lib/CMakeFiles/emu.dir/cpu_util.c.o: /Users/hninsatphyusin/Documents/01\ Project
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/wait.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h \
+  /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/bus.h \
   /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/common.h \
   /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/cpu.h \
   /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/instruction.h

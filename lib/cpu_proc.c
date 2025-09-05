@@ -51,6 +51,163 @@ static void proc_nop(cpu_context *ctx) {
     printf("Process Nope not implemented yet\n");
 }
 
+reg_type rt_lookup[] = {
+    RT_B, 
+    RT_C, 
+    RT_D, 
+    RT_E, 
+    RT_H, 
+    RT_L, 
+    RT_A
+};
+
+reg_type decode_reg(u8 reg) {
+    if (reg > 0b111) {
+        return RT_NONE;
+    }
+    return rt_lookup[reg];
+}
+
+
+static void proc_cb(cpu_context *ctx) {
+    u8 op = ctx->fetched_data;
+    reg_type reg = decode_reg(op & 0b111); //last 3 bits contain the register
+    u8 bit = (op >> 3) & 0b111; //next 3 bits contain the bit number
+    u8 bit_op = (op >> 6) & 0b11; //first 2 bits contain the operation
+    u8 reg_val = cpu_read_reg8(reg);
+
+    emu_cycles(1);
+
+    if (reg == RT_HL) {
+        emu_cycles(2);
+    }
+
+    switch(bit_op) {
+        case 1:
+            //BIT
+            cpu_set_flags(ctx, !(reg_val & (1 << bit)), 0, 1, -1);
+            return;
+
+        case 2:
+            //RST
+            reg_val &= ~(1 << bit);
+            cpu_set_reg8(reg, reg_val);
+            return;
+
+        case 3:
+            //SET
+            reg_val |= (1 << bit);
+            cpu_set_reg8(reg, reg_val);
+            return;
+    }
+
+    //if the operation is 0, then its one of the rotate/shift oeprations
+    bool flagC = CPU_FLAG_C;
+
+    switch(bit) {
+        case 0: {
+            //RLC - Rotate Left Circular
+            bool setC = false;
+            u8 result = (reg_val << 1) & 0xFF;
+
+            if ((reg_val & (1 << 7)) != 0) {
+                result |= 1; // Set carry flag if bit 7 was set
+                setC = true;
+            }
+
+            cpu_set_reg8(reg, result);
+            cpu_set_flags(ctx, result == 0, 0, 0, setC);
+        } return;
+
+        case 1: {
+            // RRC - Rotate Right Circular
+            u8 old = reg_val;
+            reg_val >>= 1;
+            reg_val |= (old << 7);
+
+            cpu_set_reg8(reg, reg_val);
+            cpu_set_flags(ctx, !reg_val, 0, 0, old & 1);
+        } return;
+
+        case 2: {
+            //RL - Rotate Left 
+            u8 old = reg_val;
+            reg_val <<= 1; //same thing as reg_val = reg_val << 1;
+            reg_val |= flagC;
+
+            cpu_set_reg8(reg, reg_val);
+            cpu_set_flags(ctx, !reg_val, 0, 0, !!(old & 0x80));
+        } return;
+
+        case 3: {
+            //RR
+            u8 old = reg_val;
+            reg_val >>= 1;
+
+            reg_val |= (flagC << 7);
+
+            cpu_set_reg8(reg, reg_val);
+            cpu_set_flags(ctx, !reg_val, 0, 0, old & 1);
+        } return;
+
+        case 4: {
+            //SLA
+            u8 old = reg_val;
+            reg_val <<= 1;
+
+            cpu_set_reg8(reg, reg_val);
+            cpu_set_flags(ctx, !reg_val, 0, 0, !!(old & 0x80));
+        } return;
+
+        case 5: {
+            //SRA
+            u8 u = (int8_t)reg_val >> 1;
+            cpu_set_reg8(reg, u);
+            cpu_set_flags(ctx, !u, 0, 0, reg_val & 1);
+        } return;
+
+        case 6: {
+            //SWAP
+            reg_val = ((reg_val & 0xF0) >> 4) | ((reg_val & 0xF) << 4);
+            cpu_set_reg8(reg, reg_val);
+            cpu_set_flags(ctx, reg_val == 0, 0, 0, 0);
+        } return;
+
+        case 7: {
+            //SRL
+            u8 u = reg_val >> 1;
+            cpu_set_reg8(reg, u);
+            cpu_set_flags(ctx, !u, 0, 0, reg_val & 1);
+        } return;
+    }
+
+    fprintf(stderr, "ERROR: INVALID CB: %02X", op);
+    NO_IMPL
+}
+
+static void proc_and(cpu_context *ctx) {
+    ctx->regs.a &= ctx->fetched_data;
+    cpu_set_flags(ctx, ctx->regs.a == 0, 0, 1, 0);
+}
+
+static void proc_xor(cpu_context *ctx) {
+    ctx->regs.a ^= ctx->fetched_data & 0xFF;
+    cpu_set_flags(ctx, ctx->regs.a == 0, 0, 0, 0);
+}
+
+static void proc_or(cpu_context *ctx) {
+    ctx->regs.a |= ctx->fetched_data & 0xFF;
+    cpu_set_flags(ctx, ctx->regs.a == 0, 0, 0, 0);
+}
+
+static void proc_cp(cpu_context *ctx) {
+    int n = (int)ctx->regs.a - (int)ctx->fetched_data;
+    int h = ((int)ctx->regs.a&0x0F) - ((int)ctx->fetched_data&0x0F) < 0;
+    int c = n < 0;
+
+    cpu_set_flags(ctx, n == 0, 1, h, c);
+}
+
 static bool check_cond(cpu_context *ctx) {
     bool z = CPU_FLAG_Z;
     bool c = CPU_FLAG_C;
@@ -116,13 +273,6 @@ static void proc_jr(cpu_context *ctx) {
 
 static void proc_di(cpu_context *ctx) {
     ctx->int_master_enabled = false;
-}
-
-
-
-static void proc_xor(cpu_context *ctx) {
-    ctx->regs.a ^= ctx->fetched_data & 0xFF;
-    cpu_set_flags(ctx, ctx->regs.a, 0, 0, 0);
 }
 
 
@@ -296,7 +446,11 @@ static IN_PROC processors[] = {
     [IN_ADD] = proc_add, 
     [IN_ADC] = proc_adc, 
     [IN_SUB] = proc_sub,
-    [IN_SBC] = proc_sbc
+    [IN_SBC] = proc_sbc, 
+    [IN_AND] = proc_and,
+    [IN_OR] = proc_or,
+    [IN_CP] = proc_cp, 
+    [IN_CB] = proc_cb
 };
 
 

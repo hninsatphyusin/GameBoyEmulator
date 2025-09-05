@@ -59,3 +59,6 @@ u8 cpu_get_ie_register();
 void cpu_set_ie_register(u8 n);
 
 cpu_registers *cpu_get_regs();
+
+void cpu_set_reg8(reg_type r, u8 val);
+u8 cpu_read_reg8(reg_type r);
