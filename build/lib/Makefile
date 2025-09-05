@@ -402,29 +402,53 @@ instructions.c.s:
 	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/instructions.c.s
 .PHONY : instructions.c.s
 
-interrrupts.o: interrrupts.c.o
-.PHONY : interrrupts.o
+interrupts.o: interrupts.c.o
+.PHONY : interrupts.o
 
 # target to build an object file
-interrrupts.c.o:
-	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/interrrupts.c.o
-.PHONY : interrrupts.c.o
+interrupts.c.o:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/interrupts.c.o
+.PHONY : interrupts.c.o
 
-interrrupts.i: interrrupts.c.i
-.PHONY : interrrupts.i
+interrupts.i: interrupts.c.i
+.PHONY : interrupts.i
 
 # target to preprocess a source file
-interrrupts.c.i:
-	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/interrrupts.c.i
-.PHONY : interrrupts.c.i
+interrupts.c.i:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/interrupts.c.i
+.PHONY : interrupts.c.i
 
-interrrupts.s: interrrupts.c.s
-.PHONY : interrrupts.s
+interrupts.s: interrupts.c.s
+.PHONY : interrupts.s
 
 # target to generate assembly for a file
-interrrupts.c.s:
-	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/interrrupts.c.s
-.PHONY : interrrupts.c.s
+interrupts.c.s:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/interrupts.c.s
+.PHONY : interrupts.c.s
+
+io.o: io.c.o
+.PHONY : io.o
+
+# target to build an object file
+io.c.o:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/io.c.o
+.PHONY : io.c.o
+
+io.i: io.c.i
+.PHONY : io.i
+
+# target to preprocess a source file
+io.c.i:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/io.c.i
+.PHONY : io.c.i
+
+io.s: io.c.s
+.PHONY : io.s
+
+# target to generate assembly for a file
+io.c.s:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/io.c.s
+.PHONY : io.c.s
 
 ppu.o: ppu.c.o
 .PHONY : ppu.o
@@ -587,9 +611,12 @@ help:
 	@echo "... instructions.o"
 	@echo "... instructions.i"
 	@echo "... instructions.s"
-	@echo "... interrrupts.o"
-	@echo "... interrrupts.i"
-	@echo "... interrrupts.s"
+	@echo "... interrupts.o"
+	@echo "... interrupts.i"
+	@echo "... interrupts.s"
+	@echo "... io.o"
+	@echo "... io.i"
+	@echo "... io.s"
 	@echo "... ppu.o"
 	@echo "... ppu.i"
 	@echo "... ppu.s"

@@ -2,6 +2,7 @@
 #include <cart.h>
 #include <ram.h>
 #include <cpu.h>
+#include <io.h>
 
 //The Game Boy has a 16-bit address bus, which is used to address ROM, RAM, and I/O.
 
@@ -29,9 +30,9 @@ u8 bus_read(u16 address) {
     } else if (address < 0xFF00) {
         //reserved unusable
         return 0;
-    } else if (address < 0xFF90) {
-        printf("UNSUPPORTED Bus read (%04X)\n", address);
-        return 0;
+    } else if (address < 0xFF80) {
+        //i/o memory
+        return io_read(address);
     } else if (address == 0xFFFF) {
         return cpu_get_ie_register();
     }
@@ -64,9 +65,9 @@ void bus_write(u16 address, u8 value) {
     } else if (address < 0xFF00) {
         //reserved unusable
         
-    } else if (address < 0xFF90) {
+    } else if (address < 0xFF80) {
         //i/o memory
-        printf("UNSUPPORTED Bus write (%04X)\n", address);
+        return io_write(address, value);
         //NO_IMPL
     } else if (address == 0xFFFF) { //cpu set enable register
         cpu_set_ie_register(value);

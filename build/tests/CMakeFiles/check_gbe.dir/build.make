@@ -96,12 +96,9 @@ check_gbe_EXTERNAL_OBJECTS =
 tests/check_gbe: tests/CMakeFiles/check_gbe.dir/check_gbe.c.o
 tests/check_gbe: tests/CMakeFiles/check_gbe.dir/build.make
 tests/check_gbe: lib/libemu.a
-tests/check_gbe: /opt/homebrew/lib/libSDL2.dylib
-tests/check_gbe: /opt/homebrew/lib/libSDL2_ttf.dylib
 tests/check_gbe: /opt/homebrew/lib/libSDL2main.a
 tests/check_gbe: /opt/homebrew/lib/libSDL2.dylib
 tests/check_gbe: /opt/homebrew/lib/libSDL2_ttf.dylib
-tests/check_gbe: /opt/homebrew/lib/libSDL2main.a
 tests/check_gbe: tests/CMakeFiles/check_gbe.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable check_gbe"
 	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/tests" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/check_gbe.dir/link.txt --verbose=$(VERBOSE)

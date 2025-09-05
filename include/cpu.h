@@ -2,6 +2,7 @@
 
 #include <common.h>
 #include <instructions.h>
+
 /* 
 cpu structure: 
 AF - Accumulator & Flags
@@ -69,3 +70,5 @@ u8 cpu_read_reg8(reg_type r);
 
 u8 cpu_get_int_flags();
 void cpu_set_int_flags(u8 value);
+
+void instr_to_str(cpu_context *ctx, char *str);

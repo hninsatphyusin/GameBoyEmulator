@@ -1,6 +1,6 @@
 #pragma once 
 
-#include <common.h>
+#include <cpu.h>
 
 typedef enum {
     IT_VBLANK = 1,

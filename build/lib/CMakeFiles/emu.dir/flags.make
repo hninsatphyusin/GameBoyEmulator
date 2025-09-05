@@ -4,7 +4,7 @@
 # compile C with /Library/Developer/CommandLineTools/usr/bin/cc
 C_DEFINES = -DHAVE_CONFIG_H
 
-C_INCLUDES = -I"/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" -I"/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/include" -I/opt/homebrew/include -I/usr/local/include
+C_INCLUDES = -I"/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" -I/opt/homebrew/include/SDL2 -I/opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2 -I"/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/include"
 
 C_FLAGSarm64 = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
 

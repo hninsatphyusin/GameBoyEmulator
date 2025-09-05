@@ -96,12 +96,9 @@ gbemu_EXTERNAL_OBJECTS =
 gbemu/gbemu: gbemu/CMakeFiles/gbemu.dir/main.c.o
 gbemu/gbemu: gbemu/CMakeFiles/gbemu.dir/build.make
 gbemu/gbemu: lib/libemu.a
-gbemu/gbemu: /opt/homebrew/lib/libSDL2.dylib
-gbemu/gbemu: /opt/homebrew/lib/libSDL2_ttf.dylib
 gbemu/gbemu: /opt/homebrew/lib/libSDL2main.a
 gbemu/gbemu: /opt/homebrew/lib/libSDL2.dylib
 gbemu/gbemu: /opt/homebrew/lib/libSDL2_ttf.dylib
-gbemu/gbemu: /opt/homebrew/lib/libSDL2main.a
 gbemu/gbemu: gbemu/CMakeFiles/gbemu.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable gbemu"
 	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/gbemu" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gbemu.dir/link.txt --verbose=$(VERBOSE)

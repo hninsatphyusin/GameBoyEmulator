@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "cpu.h": "c"
+        "cpu.h": "c",
+        "interrupts.h": "c",
+        "timer.h": "c"
     }
 }

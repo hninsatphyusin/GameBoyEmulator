@@ -1,14 +1,25 @@
 #include <cpu.h>
-#include <instructions.h> 
 #include <bus.h>
 #include <emu.h>
+#include <dbg.h>
 #include <interrupts.h>
+#include <timer.h>
 
 cpu_context ctx = {0};
 
 void cpu_init() {
     ctx.regs.pc = 0x100;
-    ctx.regs.a = 0x01;
+    ctx.regs.sp = 0xFFFE;
+    *((short *)&ctx.regs.a) = 0xB001;
+    *((short *)&ctx.regs.b) = 0x1300;
+    *((short *)&ctx.regs.d) = 0xD800;
+    *((short *)&ctx.regs.h) = 0x4D01;
+    ctx.ie_register = 0;
+    ctx.int_flags = 0;
+    ctx.int_master_enabled = false;
+    ctx.enabling_ime = false;
+
+    timer_get_context()->div = 0xABCC;
 }
 
 static void fetch_instruction() {
@@ -42,8 +53,11 @@ bool cpu_step() {
             ctx.regs.f & (1 << 4) ? 'C' : '-'
         );
 
-        printf("Tick - %08lX %04X: %7s (%02X %02X %02X) A: %02X BC: %02X%02X DE: %02X%02X HL: %02X%02X F: %s\n", 
-            emu_get_context()->ticks, pc, inst_name(ctx.curr_instr->type), ctx.curr_opcode, 
+        char instr[16];
+        instr_to_str(&ctx, instr);
+
+        printf("Tick - %08lX %04X: %-12s (%02X %02X %02X) A: %02X BC: %02X%02X DE: %02X%02X HL: %02X%02X F: %s\n", 
+            emu_get_context()->ticks, pc, instr, ctx.curr_opcode, 
             bus_read(pc + 1), bus_read(pc + 2), ctx.regs.a, ctx.regs.b, ctx.regs.c, ctx.regs.d, ctx.regs.e, ctx.regs.h, ctx.regs.l, flags);  
   
         
@@ -51,6 +65,9 @@ bool cpu_step() {
             printf("Unknown Instruction! %02X\n", ctx.curr_opcode);
             exit(-7);
         }
+
+        dbg_update();
+        dbg_print();
         
         execute_instruction(); 
     } else {
@@ -78,4 +95,8 @@ u8 cpu_get_ie_register() {
 
 void cpu_set_ie_register(u8 n) {
     ctx.ie_register = n;
+}
+
+void cpu_request_interrupt(interrupt_type t) {
+    ctx.int_flags |= t;
 }

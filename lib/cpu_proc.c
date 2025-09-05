@@ -452,9 +452,9 @@ static void proc_dec(cpu_context *ctx) {
 static void proc_add(cpu_context *ctx) {
     u32 val = cpu_read_reg(ctx->curr_instr->reg_1) + ctx->fetched_data;
 
-    bool is16bit = is16Bit(ctx->curr_instr->reg_1);
+    bool is_16bit = is16Bit(ctx->curr_instr->reg_1);
 
-    if (is16bit) {
+    if (is_16bit) {
         emu_cycles(1);
     }
 
@@ -466,7 +466,7 @@ static void proc_add(cpu_context *ctx) {
     int h = (cpu_read_reg(ctx->curr_instr->reg_1) & 0xF) + (ctx->fetched_data & 0xF) >= 0x10;
     int c = (int)(cpu_read_reg(ctx->curr_instr->reg_1) & 0xFF) + (int)(ctx->fetched_data & 0xFF) >= 0x100;
 
-    if (is16bit) {
+    if (is_16bit) {
         z = -1;
         h = (cpu_read_reg(ctx->curr_instr->reg_1) & 0xFFF) + (ctx->fetched_data & 0xFFF) >= 0x1000;
         u32 n = ((u32)cpu_read_reg(ctx->curr_instr->reg_1)) + ((u32)ctx->fetched_data);
@@ -474,14 +474,15 @@ static void proc_add(cpu_context *ctx) {
     }
 
     if (ctx->curr_instr->reg_1 == RT_SP) {
-        z = (val & 0xFF) == 0;
+        z = 0;
         h = (cpu_read_reg(ctx->curr_instr->reg_1) & 0xF) + (ctx->fetched_data & 0xF) >= 0x10;
-        c = (int)(cpu_read_reg(ctx->curr_instr->reg_1) & 0xFF) + (int)(ctx->fetched_data & 0xFF) >= 0x100;   
+        c = (int)(cpu_read_reg(ctx->curr_instr->reg_1) & 0xFF) + (int)(ctx->fetched_data & 0xFF) >= 0x100;
     }
 
     cpu_set_reg(ctx->curr_instr->reg_1, val & 0xFFFF);
     cpu_set_flags(ctx, z, 0, h, c);
 }
+
 
 static void proc_adc(cpu_context *ctx) {
     u16 u = ctx->fetched_data;
@@ -505,11 +506,14 @@ static void proc_sub(cpu_context *ctx) {
 }
 
 static void proc_sbc(cpu_context *ctx) {
-    u16 val = ctx->fetched_data + CPU_FLAG_C;
+    u8 val = ctx->fetched_data + CPU_FLAG_C;
 
     int z = cpu_read_reg(ctx->curr_instr->reg_1) - val == 0;
-    int h = ((int)cpu_read_reg(ctx->curr_instr->reg_1) & 0xF) - ((int)ctx->fetched_data & 0xF) - ((int) CPU_FLAG_C) < 0;
-    int c = ((int)cpu_read_reg(ctx->curr_instr->reg_1)) - ((int)ctx->fetched_data) - ((int)CPU_FLAG_C) < 0;
+
+    int h = ((int)cpu_read_reg(ctx->curr_instr->reg_1) & 0xF) 
+        - ((int)ctx->fetched_data & 0xF) - ((int)CPU_FLAG_C) < 0;
+    int c = ((int)cpu_read_reg(ctx->curr_instr->reg_1)) 
+        - ((int)ctx->fetched_data) - ((int)CPU_FLAG_C) < 0;
 
     cpu_set_reg(ctx->curr_instr->reg_1, cpu_read_reg(ctx->curr_instr->reg_1) - val);
     cpu_set_flags(ctx, z, 1, h, c);

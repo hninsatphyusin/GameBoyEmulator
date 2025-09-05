@@ -58,8 +58,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-taS58m"
-      binary: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-taS58m"
+      source: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-r0GKBn"
+      binary: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-r0GKBn"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_OSX_ARCHITECTURES: ""
@@ -69,18 +69,18 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-taS58m'
+        Change Dir: '/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-r0GKBn'
         
-        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a0386/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_a0386.dir/build.make CMakeFiles/cmTC_a0386.dir/build
-        Building C object CMakeFiles/cmTC_a0386.dir/CMakeCCompilerABI.c.o
-        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_a0386.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_a0386.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_a0386.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_90f3d/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_90f3d.dir/build.make CMakeFiles/cmTC_90f3d.dir/build
+        Building C object CMakeFiles/cmTC_90f3d.dir/CMakeCCompilerABI.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_90f3d.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_90f3d.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_90f3d.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
         Apple clang version 15.0.0 (clang-1500.3.9.4)
         Target: arm64-apple-darwin23.5.0
         Thread model: posix
         InstalledDir: /Library/Developer/CommandLineTools/usr/bin
         clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v "-fcoverage-compilation-dir=/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-taS58m" -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_a0386.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_a0386.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant "-fdebug-compilation-dir=/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-taS58m" -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_a0386.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v "-fcoverage-compilation-dir=/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-r0GKBn" -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_90f3d.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_90f3d.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant "-fdebug-compilation-dir=/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-r0GKBn" -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_90f3d.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
         clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target arm64-apple-darwin23.5.0
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include"
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/Library/Frameworks"
@@ -91,13 +91,13 @@ events:
          /Library/Developer/CommandLineTools/usr/include
          /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks (framework directory)
         End of search list.
-        Linking C executable cmTC_a0386
-        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0386.dir/link.txt --verbose=1
+        Linking C executable cmTC_90f3d
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_90f3d.dir/link.txt --verbose=1
         Apple clang version 15.0.0 (clang-1500.3.9.4)
         Target: arm64-apple-darwin23.5.0
         Thread model: posix
         InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.4 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o cmTC_a0386 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_a0386.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a
+         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.4 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o cmTC_90f3d -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_90f3d.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a
         @(#)PROGRAM:ld PROJECT:ld-1053.12
         BUILD 15:45:29 Feb  3 2024
         configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
@@ -109,7 +109,7 @@ events:
         	/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/swift
         Framework search paths:
         	/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks
-        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_a0386.dir/CMakeCCompilerABI.c.o -o cmTC_a0386
+        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_90f3d.dir/CMakeCCompilerABI.c.o -o cmTC_90f3d
         
       exitCode: 0
   -
@@ -151,18 +151,18 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-taS58m']
+        ignore line: [Change Dir: '/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-r0GKBn']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a0386/fast]
-        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_a0386.dir/build.make CMakeFiles/cmTC_a0386.dir/build]
-        ignore line: [Building C object CMakeFiles/cmTC_a0386.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_a0386.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_a0386.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_a0386.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_90f3d/fast]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_90f3d.dir/build.make CMakeFiles/cmTC_90f3d.dir/build]
+        ignore line: [Building C object CMakeFiles/cmTC_90f3d.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_90f3d.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_90f3d.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_90f3d.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [Apple clang version 15.0.0 (clang-1500.3.9.4)]
         ignore line: [Target: arm64-apple-darwin23.5.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
         ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
-        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v "-fcoverage-compilation-dir=/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-taS58m" -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_a0386.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_a0386.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant "-fdebug-compilation-dir=/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-taS58m" -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_a0386.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v "-fcoverage-compilation-dir=/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-r0GKBn" -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_90f3d.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_90f3d.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant "-fdebug-compilation-dir=/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-r0GKBn" -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_90f3d.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target arm64-apple-darwin23.5.0]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include"]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/Library/Frameworks"]
@@ -173,13 +173,13 @@ events:
         ignore line: [ /Library/Developer/CommandLineTools/usr/include]
         ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks (framework directory)]
         ignore line: [End of search list.]
-        ignore line: [Linking C executable cmTC_a0386]
-        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0386.dir/link.txt --verbose=1]
+        ignore line: [Linking C executable cmTC_90f3d]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_90f3d.dir/link.txt --verbose=1]
         ignore line: [Apple clang version 15.0.0 (clang-1500.3.9.4)]
         ignore line: [Target: arm64-apple-darwin23.5.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
-        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.4 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o cmTC_a0386 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_a0386.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
+        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.4 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o cmTC_90f3d -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_90f3d.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
           arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
           arg [-demangle] ==> ignore
           arg [-lto_library] ==> ignore, skip following value
@@ -194,11 +194,11 @@ events:
           arg [-syslibroot] ==> ignore
           arg [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_a0386] ==> ignore
+          arg [cmTC_90f3d] ==> ignore
           arg [-search_paths_first] ==> ignore
           arg [-headerpad_max_install_names] ==> ignore
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_a0386.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_90f3d.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lSystem] ==> lib [System]
           arg [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
         linker tool for 'C': /Library/Developer/CommandLineTools/usr/bin/ld
@@ -239,8 +239,8 @@ events:
     checks:
       - "Looking for include file stdlib.h"
     directories:
-      source: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-ooQJ4y"
-      binary: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-ooQJ4y"
+      source: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-uckIYA"
+      binary: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-uckIYA"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_MODULE_PATH: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/cmake"
@@ -251,15 +251,15 @@ events:
       variable: "HAVE_STDLIB_H"
       cached: true
       stdout: |
-        Change Dir: '/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-ooQJ4y'
+        Change Dir: '/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-uckIYA'
         
-        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_574fe/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_574fe.dir/build.make CMakeFiles/cmTC_574fe.dir/build
-        Building C object CMakeFiles/cmTC_574fe.dir/HAVE_STDLIB_H.c.o
-        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_574fe.dir/HAVE_STDLIB_H.c.o -MF CMakeFiles/cmTC_574fe.dir/HAVE_STDLIB_H.c.o.d -o CMakeFiles/cmTC_574fe.dir/HAVE_STDLIB_H.c.o -c "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-ooQJ4y/HAVE_STDLIB_H.c"
-        Linking C executable cmTC_574fe
-        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_574fe.dir/link.txt --verbose=1
-        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_574fe.dir/HAVE_STDLIB_H.c.o -o cmTC_574fe
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e7a1e/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e7a1e.dir/build.make CMakeFiles/cmTC_e7a1e.dir/build
+        Building C object CMakeFiles/cmTC_e7a1e.dir/HAVE_STDLIB_H.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_e7a1e.dir/HAVE_STDLIB_H.c.o -MF CMakeFiles/cmTC_e7a1e.dir/HAVE_STDLIB_H.c.o.d -o CMakeFiles/cmTC_e7a1e.dir/HAVE_STDLIB_H.c.o -c "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-uckIYA/HAVE_STDLIB_H.c"
+        Linking C executable cmTC_e7a1e
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e7a1e.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_e7a1e.dir/HAVE_STDLIB_H.c.o -o cmTC_e7a1e
         
       exitCode: 0
   -
@@ -271,8 +271,8 @@ events:
     checks:
       - "Looking for sys/types.h"
     directories:
-      source: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-JwBBND"
-      binary: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-JwBBND"
+      source: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-uXIjpV"
+      binary: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-uXIjpV"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_MODULE_PATH: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/cmake"
@@ -283,15 +283,15 @@ events:
       variable: "HAVE_SYS_TYPES_H"
       cached: true
       stdout: |
-        Change Dir: '/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-JwBBND'
+        Change Dir: '/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-uXIjpV'
         
-        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6a450/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_6a450.dir/build.make CMakeFiles/cmTC_6a450.dir/build
-        Building C object CMakeFiles/cmTC_6a450.dir/CheckIncludeFile.c.o
-        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_6a450.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_6a450.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_6a450.dir/CheckIncludeFile.c.o -c "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-JwBBND/CheckIncludeFile.c"
-        Linking C executable cmTC_6a450
-        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a450.dir/link.txt --verbose=1
-        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_6a450.dir/CheckIncludeFile.c.o -o cmTC_6a450
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_817b6/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_817b6.dir/build.make CMakeFiles/cmTC_817b6.dir/build
+        Building C object CMakeFiles/cmTC_817b6.dir/CheckIncludeFile.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_817b6.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_817b6.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_817b6.dir/CheckIncludeFile.c.o -c "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-uXIjpV/CheckIncludeFile.c"
+        Linking C executable cmTC_817b6
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_817b6.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_817b6.dir/CheckIncludeFile.c.o -o cmTC_817b6
         
       exitCode: 0
   -
@@ -303,8 +303,8 @@ events:
     checks:
       - "Looking for stdint.h"
     directories:
-      source: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-IHRPlm"
-      binary: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-IHRPlm"
+      source: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-JDuZc2"
+      binary: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-JDuZc2"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_MODULE_PATH: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/cmake"
@@ -315,15 +315,15 @@ events:
       variable: "HAVE_STDINT_H"
       cached: true
       stdout: |
-        Change Dir: '/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-IHRPlm'
+        Change Dir: '/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-JDuZc2'
         
-        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_33624/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_33624.dir/build.make CMakeFiles/cmTC_33624.dir/build
-        Building C object CMakeFiles/cmTC_33624.dir/CheckIncludeFile.c.o
-        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_33624.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_33624.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_33624.dir/CheckIncludeFile.c.o -c "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-IHRPlm/CheckIncludeFile.c"
-        Linking C executable cmTC_33624
-        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33624.dir/link.txt --verbose=1
-        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_33624.dir/CheckIncludeFile.c.o -o cmTC_33624
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_67727/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_67727.dir/build.make CMakeFiles/cmTC_67727.dir/build
+        Building C object CMakeFiles/cmTC_67727.dir/CheckIncludeFile.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_67727.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_67727.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_67727.dir/CheckIncludeFile.c.o -c "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-JDuZc2/CheckIncludeFile.c"
+        Linking C executable cmTC_67727
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67727.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_67727.dir/CheckIncludeFile.c.o -o cmTC_67727
         
       exitCode: 0
   -
@@ -335,8 +335,8 @@ events:
     checks:
       - "Looking for stddef.h"
     directories:
-      source: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-HhPNiL"
-      binary: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-HhPNiL"
+      source: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-XOt5qt"
+      binary: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-XOt5qt"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_MODULE_PATH: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/cmake"
@@ -347,15 +347,15 @@ events:
       variable: "HAVE_STDDEF_H"
       cached: true
       stdout: |
-        Change Dir: '/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-HhPNiL'
+        Change Dir: '/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-XOt5qt'
         
-        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d640e/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d640e.dir/build.make CMakeFiles/cmTC_d640e.dir/build
-        Building C object CMakeFiles/cmTC_d640e.dir/CheckIncludeFile.c.o
-        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_d640e.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_d640e.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_d640e.dir/CheckIncludeFile.c.o -c "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-HhPNiL/CheckIncludeFile.c"
-        Linking C executable cmTC_d640e
-        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d640e.dir/link.txt --verbose=1
-        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_d640e.dir/CheckIncludeFile.c.o -o cmTC_d640e
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ded0d/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ded0d.dir/build.make CMakeFiles/cmTC_ded0d.dir/build
+        Building C object CMakeFiles/cmTC_ded0d.dir/CheckIncludeFile.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_ded0d.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_ded0d.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_ded0d.dir/CheckIncludeFile.c.o -c "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-XOt5qt/CheckIncludeFile.c"
+        Linking C executable cmTC_ded0d
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ded0d.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_ded0d.dir/CheckIncludeFile.c.o -o cmTC_ded0d
         
       exitCode: 0
   -
@@ -367,8 +367,8 @@ events:
     checks:
       - "Check size of intmax_t"
     directories:
-      source: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-roOVDd"
-      binary: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-roOVDd"
+      source: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-GyYAlu"
+      binary: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-GyYAlu"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_MODULE_PATH: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/cmake"
@@ -379,15 +379,15 @@ events:
       variable: "HAVE_INTMAX_T"
       cached: true
       stdout: |
-        Change Dir: '/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-roOVDd'
+        Change Dir: '/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-GyYAlu'
         
-        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1035a/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_1035a.dir/build.make CMakeFiles/cmTC_1035a.dir/build
-        Building C object CMakeFiles/cmTC_1035a.dir/INTMAX_T.c.o
-        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_1035a.dir/INTMAX_T.c.o -MF CMakeFiles/cmTC_1035a.dir/INTMAX_T.c.o.d -o CMakeFiles/cmTC_1035a.dir/INTMAX_T.c.o -c "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-roOVDd/INTMAX_T.c"
-        Linking C executable cmTC_1035a
-        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1035a.dir/link.txt --verbose=1
-        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_1035a.dir/INTMAX_T.c.o -o cmTC_1035a
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e1164/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e1164.dir/build.make CMakeFiles/cmTC_e1164.dir/build
+        Building C object CMakeFiles/cmTC_e1164.dir/INTMAX_T.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_e1164.dir/INTMAX_T.c.o -MF CMakeFiles/cmTC_e1164.dir/INTMAX_T.c.o.d -o CMakeFiles/cmTC_e1164.dir/INTMAX_T.c.o -c "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-GyYAlu/INTMAX_T.c"
+        Linking C executable cmTC_e1164
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1164.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_e1164.dir/INTMAX_T.c.o -o cmTC_e1164
         
       exitCode: 0
   -
@@ -399,8 +399,8 @@ events:
     checks:
       - "Check size of uintmax_t"
     directories:
-      source: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-5mvaxl"
-      binary: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-5mvaxl"
+      source: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-1Edj9y"
+      binary: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-1Edj9y"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_MODULE_PATH: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/cmake"
@@ -411,15 +411,15 @@ events:
       variable: "HAVE_UINTMAX_T"
       cached: true
       stdout: |
-        Change Dir: '/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-5mvaxl'
+        Change Dir: '/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-1Edj9y'
         
-        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_10580/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_10580.dir/build.make CMakeFiles/cmTC_10580.dir/build
-        Building C object CMakeFiles/cmTC_10580.dir/UINTMAX_T.c.o
-        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_10580.dir/UINTMAX_T.c.o -MF CMakeFiles/cmTC_10580.dir/UINTMAX_T.c.o.d -o CMakeFiles/cmTC_10580.dir/UINTMAX_T.c.o -c "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-5mvaxl/UINTMAX_T.c"
-        Linking C executable cmTC_10580
-        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_10580.dir/link.txt --verbose=1
-        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_10580.dir/UINTMAX_T.c.o -o cmTC_10580
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_06bcb/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_06bcb.dir/build.make CMakeFiles/cmTC_06bcb.dir/build
+        Building C object CMakeFiles/cmTC_06bcb.dir/UINTMAX_T.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_06bcb.dir/UINTMAX_T.c.o -MF CMakeFiles/cmTC_06bcb.dir/UINTMAX_T.c.o.d -o CMakeFiles/cmTC_06bcb.dir/UINTMAX_T.c.o -c "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-1Edj9y/UINTMAX_T.c"
+        Linking C executable cmTC_06bcb
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06bcb.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_06bcb.dir/UINTMAX_T.c.o -o cmTC_06bcb
         
       exitCode: 0
   -
@@ -431,8 +431,8 @@ events:
     checks:
       - "Check size of pid_t"
     directories:
-      source: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-G3HGT7"
-      binary: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-G3HGT7"
+      source: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-0zVUzG"
+      binary: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-0zVUzG"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_MODULE_PATH: "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/cmake"
@@ -443,15 +443,15 @@ events:
       variable: "HAVE_PID_T"
       cached: true
       stdout: |
-        Change Dir: '/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-G3HGT7'
+        Change Dir: '/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-0zVUzG'
         
-        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_080c7/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_080c7.dir/build.make CMakeFiles/cmTC_080c7.dir/build
-        Building C object CMakeFiles/cmTC_080c7.dir/PID_T.c.o
-        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_080c7.dir/PID_T.c.o -MF CMakeFiles/cmTC_080c7.dir/PID_T.c.o.d -o CMakeFiles/cmTC_080c7.dir/PID_T.c.o -c "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-G3HGT7/PID_T.c"
-        Linking C executable cmTC_080c7
-        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_080c7.dir/link.txt --verbose=1
-        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_080c7.dir/PID_T.c.o -o cmTC_080c7
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_79865/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_79865.dir/build.make CMakeFiles/cmTC_79865.dir/build
+        Building C object CMakeFiles/cmTC_79865.dir/PID_T.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_79865.dir/PID_T.c.o -MF CMakeFiles/cmTC_79865.dir/PID_T.c.o.d -o CMakeFiles/cmTC_79865.dir/PID_T.c.o -c "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build/CMakeFiles/CMakeScratch/TryCompile-0zVUzG/PID_T.c"
+        Linking C executable cmTC_79865
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_79865.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_79865.dir/PID_T.c.o -o cmTC_79865
         
       exitCode: 0
 ...

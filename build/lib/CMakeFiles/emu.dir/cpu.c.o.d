@@ -84,4 +84,6 @@ lib/CMakeFiles/emu.dir/cpu.c.o: \
   /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/instructions.h \
   /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/bus.h \
   /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/emu.h \
-  /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/interrupts.h
+  /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/dbg.h \
+  /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/interrupts.h \
+  /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/timer.h

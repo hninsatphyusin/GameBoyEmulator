@@ -208,7 +208,7 @@ PKG_CONFIG_EXECUTABLE:FILEPATH=/opt/homebrew/bin/pkg-config
 SDL2MAIN_LIBRARY:FILEPATH=/opt/homebrew/lib/libSDL2main.a
 
 //Where the SDL2 headers can be found
-SDL2_INCLUDE_DIR:PATH=/opt/homebrew/include
+SDL2_INCLUDE_DIR:PATH=/opt/homebrew/include/SDL2
 
 //Where the SDL2 Library can be found
 SDL2_LIBRARY:FILEPATH=/opt/homebrew/lib/libSDL2.dylib
@@ -232,7 +232,7 @@ SDL2_TTF_NO_DEFAULT_PATH:BOOL=OFF
 SDL2_TTF_PATH:STRING=
 
 //Dependencies for the target
-emu_LIB_DEPENDS:STATIC=general;/opt/homebrew/lib/libSDL2.dylib;general;/opt/homebrew/lib/libSDL2_ttf.dylib;general;/opt/homebrew/lib/libSDL2main.a;general;/opt/homebrew/lib/libSDL2.dylib;general;/opt/homebrew/lib/libSDL2_ttf.dylib;
+emu_LIB_DEPENDS:STATIC=general;/opt/homebrew/lib/libSDL2main.a;general;/opt/homebrew/lib/libSDL2.dylib;general;/opt/homebrew/lib/libSDL2_ttf.dylib;
 
 //Value Computed by CMake
 gbemu_BINARY_DIR:STATIC=/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build
@@ -418,11 +418,11 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding PkgConfig
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/opt/homebrew/bin/pkg-config][v2.5.1()]
 //Details about finding SDL2
-FIND_PACKAGE_MESSAGE_DETAILS_SDL2:INTERNAL=[/opt/homebrew/lib/libSDL2.dylib][/opt/homebrew/include][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_SDL2:INTERNAL=[/opt/homebrew/lib/libSDL2.dylib][/opt/homebrew/include/SDL2][v2.32.10()]
 //Details about finding SDL2_ttf
 FIND_PACKAGE_MESSAGE_DETAILS_SDL2_ttf:INTERNAL=[/opt/homebrew/lib/libSDL2_ttf.dylib][/opt/homebrew/include/SDL2][v2.24.0()]
 //Details about finding SDL2main
-FIND_PACKAGE_MESSAGE_DETAILS_SDL2main:INTERNAL=[/opt/homebrew/lib/libSDL2main.a][/opt/homebrew/include][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_SDL2main:INTERNAL=[/opt/homebrew/lib/libSDL2main.a][/opt/homebrew/include/SDL2][v2.32.10()]
 //Result of TRY_COMPILE
 HAVE_INTMAX_T:INTERNAL=TRUE
 //Result of TRY_COMPILE
