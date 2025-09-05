@@ -81,7 +81,7 @@ lib/CMakeFiles/emu.dir/cpu.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/malloc/_ptrcheck.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_dev_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_mode_t.h \
-  /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/instruction.h \
+  /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/instructions.h \
   /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/bus.h \
   /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/emu.h \
   /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/interrupts.h

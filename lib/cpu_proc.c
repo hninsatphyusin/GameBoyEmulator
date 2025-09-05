@@ -1,12 +1,11 @@
 #include <cpu.h>
 #include <emu.h>
 #include <bus.h>
-#include <instruction.h>
+#include <instructions.h>
 #include <stack.h>
 
-cpu_context ctx;
 
-void cpu_set_flags(cpu_context *ctx, bool z, bool n, bool h, bool c) {
+void cpu_set_flags(cpu_context *ctx, int8_t z, int8_t n, int8_t h, int8_t c) {
     if (z != -1) { BIT_SET(ctx->regs.f, 7, z); }
     if (n != -1) { BIT_SET(ctx->regs.f, 6, n); }
     if (h != -1) { BIT_SET(ctx->regs.f, 5, h); }
@@ -17,6 +16,21 @@ static void proc_none(cpu_context *ctx) {
     printf("INVALID Instruction!\n");
     exit(-7);
 }
+
+static void proc_nop(cpu_context *ctx) {
+    printf("Process Nope not implemented yet\n");
+}
+
+reg_type rt_lookup[] = {
+    RT_B, 
+    RT_C, 
+    RT_D, 
+    RT_E, 
+    RT_H, 
+    RT_L, 
+    RT_HL,
+    RT_A
+};
 
 static bool is16Bit(reg_type rt) {
     return rt >= RT_AF;
@@ -47,19 +61,9 @@ static void proc_ld(cpu_context *ctx) {
     cpu_set_reg(ctx->curr_instr->reg_1, ctx->fetched_data);
 }
 
-static void proc_nop(cpu_context *ctx) {
-    printf("Process Nope not implemented yet\n");
-}
 
-reg_type rt_lookup[] = {
-    RT_B, 
-    RT_C, 
-    RT_D, 
-    RT_E, 
-    RT_H, 
-    RT_L, 
-    RT_A
-};
+
+
 
 reg_type decode_reg(u8 reg) {
     if (reg > 0b111) {
@@ -342,6 +346,10 @@ static void proc_call(cpu_context *ctx) {
     goto_addr(ctx, ctx->fetched_data, true);
 }
 
+static void proc_rst(cpu_context *ctx) {
+    goto_addr(ctx, ctx->curr_instr->param, true);
+}
+
 static void proc_jr(cpu_context *ctx) {
     char offset = (char)(ctx->fetched_data & 0xFF);
     u16 addr = ctx->regs.pc + offset;
@@ -364,7 +372,7 @@ static void proc_ldh(cpu_context *ctx) {
         cpu_set_reg(ctx->curr_instr->reg_1, bus_read(0xFF00 | ctx->fetched_data));
     } else {
         //stores the value of register A into memory address (the memory addres is 0xFF00 + addr)
-        bus_write(0xFF00 | ctx->fetched_data, ctx->regs.a);
+        bus_write(ctx->mem_dest, ctx->regs.a);
     }
     emu_cycles(1);
 }
@@ -389,7 +397,7 @@ static void proc_push(cpu_context *ctx) {
     emu_cycles(1);
     stack_push(hi);
 
-    u16 lo = cpu_read_reg(ctx->curr_instr->reg_2) & 0xFF;
+    u16 lo = cpu_read_reg(ctx->curr_instr->reg_1) & 0xFF;
     emu_cycles(1);
     stack_push(lo);
     emu_cycles(1);
@@ -542,7 +550,8 @@ static IN_PROC processors[] = {
     [IN_CCF] = proc_ccf,
     [IN_HALT] = proc_halt,
     [IN_RRA] = proc_rra, 
-    [IN_EI] = proc_ei
+    [IN_EI] = proc_ei, 
+    [IN_RST] = proc_rst
 };
 
 

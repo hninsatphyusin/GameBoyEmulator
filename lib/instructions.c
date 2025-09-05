@@ -1,4 +1,4 @@
-#include <instruction.h>
+#include <instructions.h>
 #include <cpu.h>
 
 
@@ -334,6 +334,9 @@ char *inst_lookup[] = {
     "IN_SET"
 };
 
+char *inst_name(in_type t) {
+    return inst_lookup[t];
+}
 instruction *getInstructionUsingOpcode(u8 opcode) {
     return &INSTRUCTIONS[opcode];
 }

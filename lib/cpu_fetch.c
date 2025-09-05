@@ -2,7 +2,7 @@
 #include <bus.h>
 #include <emu.h>
 
-cpu_context ctx;
+extern cpu_context ctx;
 
 void fetch_data() {
     //When register points to an address then u need to fetch the data from the data before doing some operation
@@ -34,11 +34,11 @@ void fetch_data() {
         case AM_R_D16: 
         case AM_D16: {
             u16 low = bus_read(ctx.regs.pc);
-            printf("Fetching D16 at PC: %04X\n", low);
             emu_cycles(1);
+            
             u16 high = bus_read(ctx.regs.pc + 1);
-            printf("Fetching D16 at PC: %04X\n", high);
             emu_cycles(1);
+            
             ctx.fetched_data = (high << 8) | low;
             
             ctx.regs.pc += 2;
@@ -59,13 +59,12 @@ void fetch_data() {
             //reading from memory address to register
             u16 addr = cpu_read_reg(ctx.curr_instr->reg_2);
 
-            if (ctx.curr_instr->reg_1 == RT_C) {
+            if (ctx.curr_instr->reg_2 == RT_C) {
                 addr |= 0xFF00;
             }
             ctx.fetched_data = bus_read(addr);
             emu_cycles(1);
-            return;
-        }
+        } return;
         case AM_R_HLI: {
             ctx.fetched_data = bus_read(cpu_read_reg(ctx.curr_instr->reg_2));
             emu_cycles(1);
@@ -128,19 +127,17 @@ void fetch_data() {
         case AM_A16_R:
         case AM_D16_R: {
             u16 low = bus_read(ctx.regs.pc);
-            printf("Fetching D16 at PC: %04X\n", low);
             emu_cycles(1);
+
             u16 high = bus_read(ctx.regs.pc + 1);
-            printf("Fetching D16 at PC: %04X\n", high);
             emu_cycles(1);
+
             ctx.mem_dest = (high << 8) | low;
             ctx.is_dest_mem = true;
-
             
             ctx.regs.pc += 2;
             ctx.fetched_data = cpu_read_reg(ctx.curr_instr->reg_2);
-            return;
-        }
+        } return;
 
         case AM_MR_D8: {
             ctx.fetched_data = bus_read(ctx.regs.pc);
@@ -161,15 +158,14 @@ void fetch_data() {
 
         case AM_R_A16: {
             u16 low = bus_read(ctx.regs.pc);
-            printf("Fetching D16 at PC: %04X\n", low);
             emu_cycles(1);
+            
             u16 high = bus_read(ctx.regs.pc + 1);
-            printf("Fetching D16 at PC: %04X\n", high);
             emu_cycles(1);
+            
             u16 addr = (high << 8) | low;
             
             ctx.regs.pc += 2;
-
             ctx.fetched_data = bus_read(addr);
             emu_cycles(1);
             return;

@@ -190,10 +190,10 @@ bool load_cart(char *cart_filename) {
 
     if (calculated == ctx.header->header_checksum) {
         printf("Checksum: %x (PASSED)\n", ctx.header->header_checksum);
-        return true;
+        
     }
     printf("Checksum: %x (FAILED)\n", ctx.header->header_checksum);
-    return false;
+    return true;
 } 
 
 u8 cart_read(u16 address) {

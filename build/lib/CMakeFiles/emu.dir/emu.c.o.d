@@ -83,7 +83,7 @@ lib/CMakeFiles/emu.dir/emu.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_mode_t.h \
   /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/cart.h \
   /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/cpu.h \
-  /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/instruction.h \
+  /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/instructions.h \
   /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/ui.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/pthread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/pthread/sched.h \

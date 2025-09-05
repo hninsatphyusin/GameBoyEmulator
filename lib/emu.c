@@ -24,6 +24,8 @@ emu_context *emu_get_context() {
 }
 
 void *cpu_run(void *p) {
+    cpu_init();
+
     ctx.running = true;
     ctx.paused = false;
     ctx.ticks = 0;
@@ -61,7 +63,7 @@ int emu_run(int argc, char **argv) {
 
     pthread_t cpu_thread;
     
-    if (pthread_create(&cpu_thread, NULL, cpu_run, NULL) != 0) {
+    if (pthread_create(&cpu_thread, NULL, cpu_run, NULL)) {
         printf("Failed to create CPU thread\n");
         return -1;
     }

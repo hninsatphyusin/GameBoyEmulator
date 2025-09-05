@@ -131,4 +131,4 @@ tests/CMakeFiles/check_gbe.dir/check_gbe.c.o: \
   /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/common.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h \
   /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/cpu.h \
-  /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/instruction.h
+  /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/instructions.h

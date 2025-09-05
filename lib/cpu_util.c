@@ -1,5 +1,5 @@
 #include <cpu.h>
-#include <instruction.h>
+#include <instructions.h>
 #include <bus.h>
 
 cpu_context ctx;
@@ -32,9 +32,6 @@ u16 cpu_read_reg(reg_type r) {
     }   
 }
 
-char *inst_name(in_type t) {
-    return inst_lookup[t];
-}
 
 void cpu_set_reg(reg_type rt, u16 val) {
     switch (rt) {

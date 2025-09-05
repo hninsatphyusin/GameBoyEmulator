@@ -330,6 +330,30 @@ cpu_util.c.s:
 	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/cpu_util.c.s
 .PHONY : cpu_util.c.s
 
+dbg.o: dbg.c.o
+.PHONY : dbg.o
+
+# target to build an object file
+dbg.c.o:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/dbg.c.o
+.PHONY : dbg.c.o
+
+dbg.i: dbg.c.i
+.PHONY : dbg.i
+
+# target to preprocess a source file
+dbg.c.i:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/dbg.c.i
+.PHONY : dbg.c.i
+
+dbg.s: dbg.c.s
+.PHONY : dbg.s
+
+# target to generate assembly for a file
+dbg.c.s:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/dbg.c.s
+.PHONY : dbg.c.s
+
 emu.o: emu.c.o
 .PHONY : emu.o
 
@@ -354,29 +378,29 @@ emu.c.s:
 	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/emu.c.s
 .PHONY : emu.c.s
 
-instruction.o: instruction.c.o
-.PHONY : instruction.o
+instructions.o: instructions.c.o
+.PHONY : instructions.o
 
 # target to build an object file
-instruction.c.o:
-	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/instruction.c.o
-.PHONY : instruction.c.o
+instructions.c.o:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/instructions.c.o
+.PHONY : instructions.c.o
 
-instruction.i: instruction.c.i
-.PHONY : instruction.i
+instructions.i: instructions.c.i
+.PHONY : instructions.i
 
 # target to preprocess a source file
-instruction.c.i:
-	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/instruction.c.i
-.PHONY : instruction.c.i
+instructions.c.i:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/instructions.c.i
+.PHONY : instructions.c.i
 
-instruction.s: instruction.c.s
-.PHONY : instruction.s
+instructions.s: instructions.c.s
+.PHONY : instructions.s
 
 # target to generate assembly for a file
-instruction.c.s:
-	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/instruction.c.s
-.PHONY : instruction.c.s
+instructions.c.s:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/instructions.c.s
+.PHONY : instructions.c.s
 
 interrrupts.o: interrrupts.c.o
 .PHONY : interrrupts.o
@@ -554,12 +578,15 @@ help:
 	@echo "... cpu_util.o"
 	@echo "... cpu_util.i"
 	@echo "... cpu_util.s"
+	@echo "... dbg.o"
+	@echo "... dbg.i"
+	@echo "... dbg.s"
 	@echo "... emu.o"
 	@echo "... emu.i"
 	@echo "... emu.s"
-	@echo "... instruction.o"
-	@echo "... instruction.i"
-	@echo "... instruction.s"
+	@echo "... instructions.o"
+	@echo "... instructions.i"
+	@echo "... instructions.s"
 	@echo "... interrrupts.o"
 	@echo "... interrrupts.i"
 	@echo "... interrrupts.s"

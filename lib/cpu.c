@@ -1,10 +1,10 @@
 #include <cpu.h>
-#include <instruction.h> 
+#include <instructions.h> 
 #include <bus.h>
 #include <emu.h>
 #include <interrupts.h>
 
-extern cpu_context ctx;
+cpu_context ctx = {0};
 
 void cpu_init() {
     ctx.regs.pc = 0x100;
@@ -31,6 +31,7 @@ bool cpu_step() {
     if (!ctx.halted) {
         u16 pc = ctx.regs.pc;
         fetch_instruction();
+        emu_cycles(1);
         fetch_data();
 
         char flags[16];
@@ -61,7 +62,7 @@ bool cpu_step() {
 
     if (ctx.int_master_enabled) {
         cpu_handle_interrupts(&ctx);
-        ctx.enabling_ime = true;
+        ctx.enabling_ime = false;
     }
 
     if (ctx.enabling_ime) {

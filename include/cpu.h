@@ -1,7 +1,7 @@
 #pragma once
 
 #include <common.h>
-#include <instruction.h>
+#include <instructions.h>
 /* 
 cpu structure: 
 AF - Accumulator & Flags
@@ -54,7 +54,6 @@ IN_PROC inst_get_processor(in_type type);
 #define CPU_FLAG_H BIT(ctx->regs.f, 5)
 #define CPU_FLAG_C BIT(ctx->regs.f, 4)
 
-char *inst_name(in_type t);
 
 void cpu_set_reg(reg_type rt, u16 val);
 void fetch_data();
