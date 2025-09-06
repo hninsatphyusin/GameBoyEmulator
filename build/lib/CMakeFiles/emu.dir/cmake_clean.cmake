@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/emu.dir/cpu_util.c.o.d"
   "CMakeFiles/emu.dir/dbg.c.o"
   "CMakeFiles/emu.dir/dbg.c.o.d"
+  "CMakeFiles/emu.dir/dma.c.o"
+  "CMakeFiles/emu.dir/dma.c.o.d"
   "CMakeFiles/emu.dir/emu.c.o"
   "CMakeFiles/emu.dir/emu.c.o.d"
   "CMakeFiles/emu.dir/instructions.c.o"

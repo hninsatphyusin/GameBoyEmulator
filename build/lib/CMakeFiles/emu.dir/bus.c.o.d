@@ -84,4 +84,6 @@ lib/CMakeFiles/emu.dir/bus.c.o: \
   /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/ram.h \
   /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/cpu.h \
   /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/instructions.h \
-  /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/io.h
+  /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/io.h \
+  /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/ppu.h \
+  /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/dma.h

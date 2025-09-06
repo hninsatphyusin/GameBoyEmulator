@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/cpu_proc.c" "lib/CMakeFiles/emu.dir/cpu_proc.c.o" "gcc" "lib/CMakeFiles/emu.dir/cpu_proc.c.o.d"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/cpu_util.c" "lib/CMakeFiles/emu.dir/cpu_util.c.o" "gcc" "lib/CMakeFiles/emu.dir/cpu_util.c.o.d"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/dbg.c" "lib/CMakeFiles/emu.dir/dbg.c.o" "gcc" "lib/CMakeFiles/emu.dir/dbg.c.o.d"
+  "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/dma.c" "lib/CMakeFiles/emu.dir/dma.c.o" "gcc" "lib/CMakeFiles/emu.dir/dma.c.o.d"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/emu.c" "lib/CMakeFiles/emu.dir/emu.c.o" "gcc" "lib/CMakeFiles/emu.dir/emu.c.o.d"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/instructions.c" "lib/CMakeFiles/emu.dir/instructions.c.o" "gcc" "lib/CMakeFiles/emu.dir/instructions.c.o.d"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/interrupts.c" "lib/CMakeFiles/emu.dir/interrupts.c.o" "gcc" "lib/CMakeFiles/emu.dir/interrupts.c.o.d"

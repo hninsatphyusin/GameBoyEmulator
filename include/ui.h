@@ -8,3 +8,5 @@ static const int SCREEN_HEIGHT = 768;
 void ui_init();
 void delay(u32 ms);
 void ui_handle_events();
+
+void ui_update();

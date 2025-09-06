@@ -2,6 +2,8 @@
     "files.associations": {
         "cpu.h": "c",
         "interrupts.h": "c",
-        "timer.h": "c"
+        "timer.h": "c",
+        "ppu.h": "c",
+        "bus.h": "c"
     }
 }
