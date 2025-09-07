@@ -45,6 +45,7 @@ set(OLD_GLOB
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/io.c"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/lcd.c"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/ppu.c"
+  "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/ppu_pipeline.c"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/ppu_sm.c"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/ram.c"
   "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/lib/stack.c"

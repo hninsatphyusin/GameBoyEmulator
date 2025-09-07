@@ -27,6 +27,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/emu.dir/lcd.c.o.d"
   "CMakeFiles/emu.dir/ppu.c.o"
   "CMakeFiles/emu.dir/ppu.c.o.d"
+  "CMakeFiles/emu.dir/ppu_pipeline.c.o"
+  "CMakeFiles/emu.dir/ppu_pipeline.c.o.d"
   "CMakeFiles/emu.dir/ppu_sm.c.o"
   "CMakeFiles/emu.dir/ppu_sm.c.o.d"
   "CMakeFiles/emu.dir/ram.c.o"

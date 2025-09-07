@@ -18,7 +18,7 @@ static void proc_none(cpu_context *ctx) {
 }
 
 static void proc_nop(cpu_context *ctx) {
-    printf("Process Nope not implemented yet\n");
+    //printf("Process Nope not implemented yet\n");
 }
 
 reg_type rt_lookup[] = {
