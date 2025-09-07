@@ -5,6 +5,7 @@
         "timer.h": "c",
         "ppu.h": "c",
         "bus.h": "c",
-        "ppu_sm.h": "c"
+        "ppu_sm.h": "c",
+        "lcd.h": "c"
     }
 }

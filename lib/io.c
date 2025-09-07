@@ -3,10 +3,15 @@
 #include <cpu.h>
 #include <dma.h>
 #include <lcd.h>
+#include <gamepad.h>
 
 static char serial_data[2];
 
 u8 io_read(u16 address) {
+    if (address == 0xFF00) {
+        return gamepad_get_output();
+    }
+
     if (address == 0xFF01) {
         return serial_data[0];
     }
@@ -25,10 +30,31 @@ u8 io_read(u16 address) {
     if (BETWEEN(address, 0xFF40, 0xFF4B)) {
         return lcd_read(address);
     }
+
+    // Audio registers (stub implementation - return 0)
+    if (BETWEEN(address, 0xFF10, 0xFF26)) {
+        return 0;
+    }
+
+    // Wave pattern RAM and additional audio
+    if (BETWEEN(address, 0xFF27, 0xFF3F)) {
+        return 0;
+    }
+
+    // Extended I/O range (CGB registers, etc.)
+    if (BETWEEN(address, 0xFF4C, 0xFF7F)) {
+        return 0;
+    }
+
     printf("UNSUPPORTED bus_read(%04X)\n", address);
     return 0;
 }
 void io_write(u16 address, u8 value) {
+    if (address == 0xFF00) {
+        gamepad_set_sel(value);
+        return;
+    }
+
     if (address == 0xFF01) {
         serial_data[0] = value;
         return;
@@ -53,5 +79,21 @@ void io_write(u16 address, u8 value) {
         lcd_write(address, value);
         return;
     }
+
+    // Audio registers (stub implementation - just ignore)
+    if (BETWEEN(address, 0xFF10, 0xFF26)) {
+        return;
+    }
+
+    // Wave pattern RAM and additional audio
+    if (BETWEEN(address, 0xFF27, 0xFF3F)) {
+        return;
+    }
+
+    // Extended I/O range (CGB registers, etc.)
+    if (BETWEEN(address, 0xFF4C, 0xFF7F)) {
+        return;
+    }
+
     printf("UNSUPPORTED bus_write(%04X)\n", address);
 }

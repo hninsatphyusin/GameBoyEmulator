@@ -4,7 +4,16 @@
 #include <interrupts.h>
 #include <string.h>
 
+void pipeline_fifo_reset();
+void pipeline_process();
+bool window_visible();
+
 void increment_ly() {
+    if (window_visible() && lcd_get_context()->ly >= lcd_get_context()->win_y &&
+        lcd_get_context()->ly < lcd_get_context()->win_y + YRES) {
+            ppu_get_context()->window_line++;
+    }
+
     lcd_get_context()->ly++;
 
     if (lcd_get_context()->ly == lcd_get_context()->ly_compare) {
@@ -90,9 +99,8 @@ void ppu_mode_oam() {
         ppu_get_context()->pfc.fifo_x = 0;
     }
 
-    if (ppu_get_context()->line_ticks ==1) {
+    if (ppu_get_context()->line_ticks == 1) {
         //read oam on the first tick only...
-
         ppu_get_context()->line_sprites = 0;
         ppu_get_context()->line_sprite_count = 0;
 
@@ -121,6 +129,7 @@ void ppu_mode_vblank() {
         if (lcd_get_context()->ly >= LINES_PER_FRAME) {
             LCDS_MODE_SET(MODE_OAM);
             lcd_get_context()->ly = 0;
+            ppu_get_context()->window_line = 0;
         }
 
         ppu_get_context()->line_ticks = 0;

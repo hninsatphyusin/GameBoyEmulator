@@ -4,7 +4,7 @@
 
 static lcd_context ctx;
 
-static unsigned long colors_default[4] = {0xFFFFFFFF, 0xFFAAAAAA, 0xFF555555, 0xFF000000};
+static unsigned long colors_default[4] = {0xFFFFFFFF, 0xFFAAAAAA, 0xFF555555, 0xFF000000}; 
 
 void lcd_init() {
     ctx.lcdc = 0x91;
@@ -18,7 +18,7 @@ void lcd_init() {
     ctx.win_y = 0;
     ctx.win_x = 0;
 
-    for (int i = 0; i<4; i++) {
+    for (int i=0; i<4; i++) {
         ctx.bg_colors[i] = colors_default[i];
         ctx.sp1_colors[i] = colors_default[i];
         ctx.sp2_colors[i] = colors_default[i];
@@ -32,13 +32,14 @@ lcd_context *lcd_get_context() {
 u8 lcd_read(u16 address) {
     u8 offset = (address - 0xFF40);
     u8 *p = (u8 *)&ctx;
+
     return p[offset];
 }
 
 void update_palette(u8 palette_data, u8 pal) {
     u32 *p_colors = ctx.bg_colors;
 
-    switch (pal) {
+    switch(pal) {
         case 1:
             p_colors = ctx.sp1_colors;
             break;
@@ -47,20 +48,23 @@ void update_palette(u8 palette_data, u8 pal) {
             break;
     }
 
-    p_colors[0] = colors_default[palette_data & 0xb11];
-    p_colors[1] = colors_default[(palette_data >> 2) & 0xb11];
-    p_colors[2] = colors_default[(palette_data >> 4) & 0xb11];
-    p_colors[3] = colors_default[(palette_data >> 6) & 0xb11];
+    p_colors[0] = colors_default[palette_data & 0b11];
+    p_colors[1] = colors_default[(palette_data >> 2) & 0b11];
+    p_colors[2] = colors_default[(palette_data >> 4) & 0b11];
+    p_colors[3] = colors_default[(palette_data >> 6) & 0b11];
 }
+
 void lcd_write(u16 address, u8 value) {
+
     u8 offset = (address - 0xFF40);
     u8 *p = (u8 *)&ctx;
-
     p[offset] = value;
 
-    if (offset == 6) {
+    if (offset == 6) { 
+        //0xFF46 = DMA
         dma_start(value);
     }
+
     if (address == 0xFF47) {
         update_palette(value, 0);
     } else if (address == 0xFF48) {

@@ -402,6 +402,30 @@ emu.c.s:
 	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/emu.c.s
 .PHONY : emu.c.s
 
+gamepad.o: gamepad.c.o
+.PHONY : gamepad.o
+
+# target to build an object file
+gamepad.c.o:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/gamepad.c.o
+.PHONY : gamepad.c.o
+
+gamepad.i: gamepad.c.i
+.PHONY : gamepad.i
+
+# target to preprocess a source file
+gamepad.c.i:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/gamepad.c.i
+.PHONY : gamepad.c.i
+
+gamepad.s: gamepad.c.s
+.PHONY : gamepad.s
+
+# target to generate assembly for a file
+gamepad.c.s:
+	cd "/Users/hninsatphyusin/Documents/01 Projects/GameBoyEmulator/build" && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/emu.dir/build.make lib/CMakeFiles/emu.dir/gamepad.c.s
+.PHONY : gamepad.c.s
+
 instructions.o: instructions.c.o
 .PHONY : instructions.o
 
@@ -707,6 +731,9 @@ help:
 	@echo "... emu.o"
 	@echo "... emu.i"
 	@echo "... emu.s"
+	@echo "... gamepad.o"
+	@echo "... gamepad.i"
+	@echo "... gamepad.s"
 	@echo "... instructions.o"
 	@echo "... instructions.i"
 	@echo "... instructions.s"
