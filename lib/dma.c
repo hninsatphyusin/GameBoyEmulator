@@ -1,7 +1,6 @@
 #include <dma.h>
-#include <bus.h>
 #include <ppu.h>
-#include <unistd.h>  // for sleep() function
+#include <bus.h>
 
 typedef struct {
     bool active;
@@ -15,9 +14,10 @@ static dma_context ctx;
 void dma_start(u8 start) {
     ctx.active = true;
     ctx.byte = 0;
-    ctx.start_delay = 2; //2 machine cycles delay before starting transfer
+    ctx.start_delay = 2;
     ctx.value = start;
 }
+
 void dma_tick() {
     if (!ctx.active) {
         return;
@@ -29,14 +29,10 @@ void dma_tick() {
     }
 
     ppu_oam_write(ctx.byte, bus_read((ctx.value * 0x100) + ctx.byte));
-    ctx.byte++;
-    ctx.active = ctx.byte < 0xA0;
 
-    if (!ctx.active) {
-        //DMA transfer complete
-        printf("DMA transfer complete\n");
-        sleep(2);    
-    }
+    ctx.byte++;
+
+    ctx.active = ctx.byte < 0xA0;
 }
 
 bool dma_transferring() {

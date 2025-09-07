@@ -7,6 +7,8 @@
 
 cpu_context ctx = {0};
 
+#define CPU_DEBUG 0
+
 void cpu_init() {
     ctx.regs.pc = 0x100;
     ctx.regs.sp = 0xFFFE;
@@ -23,7 +25,7 @@ void cpu_init() {
 }
 
 static void fetch_instruction() {
-    printf("Fetching instruction at PC: %04X\n", ctx.regs.pc);  
+    //printf("Fetching instruction at PC: %04X\n", ctx.regs.pc);  
     ctx.curr_opcode = bus_read(ctx.regs.pc++); //read the instruction at curr address, then increment counter 
     ctx.curr_instr = getInstructionUsingOpcode(ctx.curr_opcode);
 }
@@ -45,6 +47,7 @@ bool cpu_step() {
         emu_cycles(1);
         fetch_data();
 
+#if CPU_DEBUG == 1
         char flags[16];
         sprintf(flags, "%c%c%c%c",
             ctx.regs.f & (1 << 7) ? 'Z' : '-', 
@@ -59,7 +62,7 @@ bool cpu_step() {
         printf("Tick - %08lX %04X: %-12s (%02X %02X %02X) A: %02X BC: %02X%02X DE: %02X%02X HL: %02X%02X F: %s\n", 
             emu_get_context()->ticks, pc, instr, ctx.curr_opcode, 
             bus_read(pc + 1), bus_read(pc + 2), ctx.regs.a, ctx.regs.b, ctx.regs.c, ctx.regs.d, ctx.regs.e, ctx.regs.h, ctx.regs.l, flags);  
-  
+#endif
         
         if (ctx.curr_instr == NULL) {
             printf("Unknown Instruction! %02X\n", ctx.curr_opcode);

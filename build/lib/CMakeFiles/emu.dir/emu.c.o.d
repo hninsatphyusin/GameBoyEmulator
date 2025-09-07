@@ -122,4 +122,5 @@ lib/CMakeFiles/emu.dir/emu.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_uuid_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/gethostuuid.h \
   /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/timer.h \
-  /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/dma.h
+  /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/dma.h \
+  /Users/hninsatphyusin/Documents/01\ Projects/GameBoyEmulator/include/ppu.h

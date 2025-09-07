@@ -4,6 +4,7 @@
         "interrupts.h": "c",
         "timer.h": "c",
         "ppu.h": "c",
-        "bus.h": "c"
+        "bus.h": "c",
+        "ppu_sm.h": "c"
     }
 }

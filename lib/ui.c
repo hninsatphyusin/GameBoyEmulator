@@ -18,6 +18,10 @@ void delay(u32 ms) {
     SDL_Delay(ms);
 }
 
+u32 get_ticks() {
+    return SDL_GetTicks();
+}
+
 static int scale = 4;
 
 static unsigned long tile_colors[4] = {0xFFFFFFFF, 0xFFAAAAAA, 0xFF555555, 0xFF000000}; 
@@ -39,7 +43,7 @@ void ui_init() {
         0xFF000000);
     
     sdlDebugTexture = SDL_CreateTexture(sdlDebugRenderer, 
-        SDL_PIXELFORMAT_ARGB8888, SDL_TEXTUREACCESS_STREAMING, (16 * 8 * scale) + (16 * scale), (32 * 8 * scale) + (16 * scale));
+        SDL_PIXELFORMAT_ARGB8888, SDL_TEXTUREACCESS_STREAMING, (16 * 8 * scale) + (16 * scale), (32 * 8 * scale) + (64 * scale));
     
     int x, y;
     SDL_GetWindowPosition(sdlWindow, &x, &y);
@@ -109,7 +113,7 @@ void ui_update() {
 void ui_handle_events() {
     SDL_Event e;
 
-    while (SDL_PollEvent(&e)) {
+    while (SDL_PollEvent(&e) > 0) {
         if (e.type == SDL_WINDOWEVENT && e.window.event == SDL_WINDOWEVENT_CLOSE) {
             emu_get_context()->die = true;
         }
