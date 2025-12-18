@@ -180,5 +180,3 @@ This is primarily a learning project, but suggestions and improvements are welco
 This project is for educational purposes. Game Boy is a trademark of Nintendo.
 
 ---
-
-*Built with passion for retro gaming and low-level programming! 🎮*
